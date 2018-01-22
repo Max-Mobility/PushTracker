@@ -1,8 +1,6 @@
 #ifndef ACC_INCLUDE_GUARD_
 #define ACC_INCLUDE_GUARD_
 
-#ifndef ACC_H
-#define ACC_H
 #include<blestack/hw.h>
 
 enum acc_on_off
@@ -23,5 +21,4 @@ void acc_set_tap(float sens);
 #define acc_int_source 0x0c
 #define acc_PL_STATUS 0x10
 
-#endif
 #endif //ACC_INCLUDE_GUARD_

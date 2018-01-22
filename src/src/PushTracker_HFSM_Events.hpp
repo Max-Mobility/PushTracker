@@ -1,7 +1,6 @@
 #ifndef __EVENT_INCLUDE_GUARD__
 #define __EVENT_INCLUDE_GUARD__
 
-#include <cstddef>
 #include <deque>
 
 #ifdef DEBUG_OUTPUT
@@ -17,7 +16,6 @@ namespace StateMachine {
       BUTTON_LEFT_HOLD,
       BUTTON_RIGHT,
       BUTTON_RIGHT_HOLD,
-      CANCEL,
       CONNECTED,
       ENTER_SETTINGS,
       MOTOR_OFF,
@@ -29,6 +27,7 @@ namespace StateMachine {
       POWER_ON,
       SCAN_APP,
       SELECT,
+      START_OTA,
       TAP,
       TIMEOUT,
     }; // ENUMS GENERATED FROM MODEL
@@ -36,9 +35,9 @@ namespace StateMachine {
     /**
      * @brief Constructor for initializing the type.
      */
-    Event ( enum Type t ) : _t(t) { }
+    Event ( Type t ) : _t(t) { }
 
-    enum Type type ( void ) {
+    Type type ( void ) {
       return _t;
     }
     
@@ -57,9 +56,6 @@ namespace StateMachine {
         break;
       case BUTTON_RIGHT_HOLD:
         eventString = "BUTTON_RIGHT_HOLD";
-        break;
-      case CANCEL:
-        eventString = "CANCEL";
         break;
       case CONNECTED:
         eventString = "CONNECTED";
@@ -94,6 +90,9 @@ namespace StateMachine {
       case SELECT:
         eventString = "SELECT";
         break;
+      case START_OTA:
+        eventString = "START_OTA";
+        break;
       case TAP:
         eventString = "TAP";
         break;
@@ -108,7 +107,7 @@ namespace StateMachine {
     #endif
     
   protected:
-    enum Type _t;
+    Type _t;
   };
   
   /**
@@ -131,7 +130,7 @@ namespace StateMachine {
      *
      * @param[in]  Event::Type  t  The type of the event to create
      */
-    void                 spawnEvent   ( enum StateMachine::Event::Type t ) {
+    void                 spawnEvent   ( StateMachine::Event::Type t ) {
       StateMachine::Event* newEvent = new Event( t );
       _eventQ.push_back( newEvent );
     }

@@ -9,7 +9,7 @@ void set_motor(enum motor_on_off on_off)
     P0_7=on_off;
 }
 
-void init_motor()
+void init_motor(void)
 {
   set_motor(motor_off);  
 

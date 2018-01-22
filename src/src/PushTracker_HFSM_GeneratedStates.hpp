@@ -8,6 +8,28 @@
 // User Includes for the HFSM
 //::::/c/B::::Includes::::
 // here are some includes
+#define CC2541
+extern "C" {
+  #include <blestack/blestack.h>
+  #include <blestack/gap.h>
+  #include <blestack/hw.h>
+  #include <blestack/dma.h>
+  
+  #include "adc.h"
+  #include "ble.h"
+  #include "stubs.h"
+  #include "i2c.h"
+  #include "oled.h"
+  #include "display_data.h"
+  #include "acc.h"
+  #include "ioint.h"
+  #include "leds.h"
+  #include "motor.h"
+  #include "pstore.h"
+  #include "rtc.h"
+  #include "globals.h"
+  #include "Timer1.h"
+}
 
 namespace StateMachine {
 
@@ -101,10 +123,10 @@ namespace StateMachine {
       
         /**
          * @brief Calls _activeState->handleEvent( event ), then if the
-         *  event is not nullptr (meaning the event was not consumed by
+         *  event is not 0 (meaning the event was not consumed by
          *  the child subtree), it checks the event against all internal
          *  transitions associated with that Event.  If the event is still
-         *  not a nullptr (meaning the event was not consumed by the
+         *  not a 0 (meaning the event was not consumed by the
          *  internal transitions), then it checks the event against all
          *  external transitions associated with that Event.
          *
@@ -173,10 +195,10 @@ namespace StateMachine {
       
         /**
          * @brief Calls _activeState->handleEvent( event ), then if the
-         *  event is not nullptr (meaning the event was not consumed by
+         *  event is not 0 (meaning the event was not consumed by
          *  the child subtree), it checks the event against all internal
          *  transitions associated with that Event.  If the event is still
-         *  not a nullptr (meaning the event was not consumed by the
+         *  not a 0 (meaning the event was not consumed by the
          *  internal transitions), then it checks the event against all
          *  external transitions associated with that Event.
          *
@@ -245,10 +267,10 @@ namespace StateMachine {
       
         /**
          * @brief Calls _activeState->handleEvent( event ), then if the
-         *  event is not nullptr (meaning the event was not consumed by
+         *  event is not 0 (meaning the event was not consumed by
          *  the child subtree), it checks the event against all internal
          *  transitions associated with that Event.  If the event is still
-         *  not a nullptr (meaning the event was not consumed by the
+         *  not a 0 (meaning the event was not consumed by the
          *  internal transitions), then it checks the event against all
          *  external transitions associated with that Event.
          *
@@ -277,222 +299,6 @@ namespace StateMachine {
       class Settings : public StateMachine::StateBase {
       public:
       
-        /**
-         * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_SmartDrive : /c/B/0/c/3
-         *
-         * States contain other states and can consume generic
-         * StateMachine::Event objects if they have internal or external
-         * transitions on those events and if those transitions' guards are
-         * satisfied. Only one transition can consume an event in a given
-         * state machine.
-         *
-         * There is also a different kind of Event, the tick event, which is
-         * not consumed, but instead executes from the top-level state all
-         * the way to the curently active leaf state.
-         *
-         * Entry and Exit actions also occur whenever a state is entered or
-         * exited, respectively.
-         */
-        class Pair_SmartDrive : public StateMachine::StateBase {
-        public:
-        
-          /**
-           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing : /c/B/0/c/3/s
-           *
-           * States contain other states and can consume generic
-           * StateMachine::Event objects if they have internal or external
-           * transitions on those events and if those transitions' guards are
-           * satisfied. Only one transition can consume an event in a given
-           * state machine.
-           *
-           * There is also a different kind of Event, the tick event, which is
-           * not consumed, but instead executes from the top-level state all
-           * the way to the curently active leaf state.
-           *
-           * Entry and Exit actions also occur whenever a state is entered or
-           * exited, respectively.
-           */
-          class Pairing : public StateMachine::StateBase {
-          public:
-          
-            
-            // Timer period
-            static const double timerPeriod;
-          
-            // Constructors
-            Pairing  ( void ) : StateBase( ) {}
-            Pairing  ( StateBase* _parent ) : StateBase( _parent ) {}
-            ~Pairing ( void ) {}
-          
-            /**
-             * @brief Calls entry() then handles any child
-             *  initialization. Finally calls makeActive on the leaf.
-             */
-            void                     initialize ( void );
-              
-            /**
-             * @brief Runs the entry() function defined in the model.
-             */
-            void                     entry ( void );
-          
-            /**
-             * @brief Runs the exit() function defined in the model.
-             */
-            void                     exit ( void );
-          
-            /**
-             * @brief Runs the tick() function defined in the model and then
-             *  calls _activeState->tick().
-             */
-            void                     tick ( void );
-          
-            /**
-             * @brief The timer period of the state in floating point seconds.
-             *
-             * @return  double  timer period
-             */
-            double                   getTimerPeriod ( void );
-          
-            /**
-             * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
-             *  the child subtree), it checks the event against all internal
-             *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
-             *  internal transitions), then it checks the event against all
-             *  external transitions associated with that Event.
-             *
-             * @param[in] StateMachine::Event* Event needing to be handled
-             *
-             * @return true if event is consumed, false otherwise
-             */
-            bool                     handleEvent ( StateMachine::Event* event );
-          };
-          /**
-           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon : /c/B/0/c/3/K
-           *
-           * States contain other states and can consume generic
-           * StateMachine::Event objects if they have internal or external
-           * transitions on those events and if those transitions' guards are
-           * satisfied. Only one transition can consume an event in a given
-           * state machine.
-           *
-           * There is also a different kind of Event, the tick event, which is
-           * not consumed, but instead executes from the top-level state all
-           * the way to the curently active leaf state.
-           *
-           * Entry and Exit actions also occur whenever a state is entered or
-           * exited, respectively.
-           */
-          class Icon : public StateMachine::StateBase {
-          public:
-          
-            
-            // Timer period
-            static const double timerPeriod;
-          
-            // Constructors
-            Icon  ( void ) : StateBase( ) {}
-            Icon  ( StateBase* _parent ) : StateBase( _parent ) {}
-            ~Icon ( void ) {}
-          
-            /**
-             * @brief Calls entry() then handles any child
-             *  initialization. Finally calls makeActive on the leaf.
-             */
-            void                     initialize ( void );
-              
-            /**
-             * @brief Runs the entry() function defined in the model.
-             */
-            void                     entry ( void );
-          
-            /**
-             * @brief Runs the exit() function defined in the model.
-             */
-            void                     exit ( void );
-          
-            /**
-             * @brief Runs the tick() function defined in the model and then
-             *  calls _activeState->tick().
-             */
-            void                     tick ( void );
-          
-            /**
-             * @brief The timer period of the state in floating point seconds.
-             *
-             * @return  double  timer period
-             */
-            double                   getTimerPeriod ( void );
-          
-            /**
-             * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
-             *  the child subtree), it checks the event against all internal
-             *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
-             *  internal transitions), then it checks the event against all
-             *  external transitions associated with that Event.
-             *
-             * @param[in] StateMachine::Event* Event needing to be handled
-             *
-             * @return true if event is consumed, false otherwise
-             */
-            bool                     handleEvent ( StateMachine::Event* event );
-          };
-          
-          // Timer period
-          static const double timerPeriod;
-        
-          // Constructors
-          Pair_SmartDrive  ( void ) : StateBase( ) {}
-          Pair_SmartDrive  ( StateBase* _parent ) : StateBase( _parent ) {}
-          ~Pair_SmartDrive ( void ) {}
-        
-          /**
-           * @brief Calls entry() then handles any child
-           *  initialization. Finally calls makeActive on the leaf.
-           */
-          void                     initialize ( void );
-            
-          /**
-           * @brief Runs the entry() function defined in the model.
-           */
-          void                     entry ( void );
-        
-          /**
-           * @brief Runs the exit() function defined in the model.
-           */
-          void                     exit ( void );
-        
-          /**
-           * @brief Runs the tick() function defined in the model and then
-           *  calls _activeState->tick().
-           */
-          void                     tick ( void );
-        
-          /**
-           * @brief The timer period of the state in floating point seconds.
-           *
-           * @return  double  timer period
-           */
-          double                   getTimerPeriod ( void );
-        
-          /**
-           * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
-           *  the child subtree), it checks the event against all internal
-           *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
-           *  internal transitions), then it checks the event against all
-           *  external transitions associated with that Event.
-           *
-           * @param[in] StateMachine::Event* Event needing to be handled
-           *
-           * @return true if event is consumed, false otherwise
-           */
-          bool                     handleEvent ( StateMachine::Event* event );
-        };
         /**
          * @brief Declaration for PushTracker_HFSM::On::Settings::Exit : /c/B/0/c/6
          *
@@ -552,10 +358,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -566,7 +372,7 @@ namespace StateMachine {
           bool                     handleEvent ( StateMachine::Event* event );
         };
         /**
-         * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_Phone : /c/B/0/c/E
+         * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_Phone : /c/B/0/c/s
          *
          * States contain other states and can consume generic
          * StateMachine::Event objects if they have internal or external
@@ -585,7 +391,7 @@ namespace StateMachine {
         public:
         
           /**
-           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_Phone::Pairing : /c/B/0/c/E/k
+           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_Phone::Pairing : /c/B/0/c/s/k
            *
            * States contain other states and can consume generic
            * StateMachine::Event objects if they have internal or external
@@ -643,10 +449,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -657,7 +463,7 @@ namespace StateMachine {
             bool                     handleEvent ( StateMachine::Event* event );
           };
           /**
-           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_Phone::Icon : /c/B/0/c/E/b
+           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_Phone::Icon : /c/B/0/c/s/b
            *
            * States contain other states and can consume generic
            * StateMachine::Event objects if they have internal or external
@@ -715,10 +521,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -768,10 +574,226 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
+           *  internal transitions), then it checks the event against all
+           *  external transitions associated with that Event.
+           *
+           * @param[in] StateMachine::Event* Event needing to be handled
+           *
+           * @return true if event is consumed, false otherwise
+           */
+          bool                     handleEvent ( StateMachine::Event* event );
+        };
+        /**
+         * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_SmartDrive : /c/B/0/c/o
+         *
+         * States contain other states and can consume generic
+         * StateMachine::Event objects if they have internal or external
+         * transitions on those events and if those transitions' guards are
+         * satisfied. Only one transition can consume an event in a given
+         * state machine.
+         *
+         * There is also a different kind of Event, the tick event, which is
+         * not consumed, but instead executes from the top-level state all
+         * the way to the curently active leaf state.
+         *
+         * Entry and Exit actions also occur whenever a state is entered or
+         * exited, respectively.
+         */
+        class Pair_SmartDrive : public StateMachine::StateBase {
+        public:
+        
+          /**
+           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing : /c/B/0/c/o/s
+           *
+           * States contain other states and can consume generic
+           * StateMachine::Event objects if they have internal or external
+           * transitions on those events and if those transitions' guards are
+           * satisfied. Only one transition can consume an event in a given
+           * state machine.
+           *
+           * There is also a different kind of Event, the tick event, which is
+           * not consumed, but instead executes from the top-level state all
+           * the way to the curently active leaf state.
+           *
+           * Entry and Exit actions also occur whenever a state is entered or
+           * exited, respectively.
+           */
+          class Pairing : public StateMachine::StateBase {
+          public:
+          
+            
+            // Timer period
+            static const double timerPeriod;
+          
+            // Constructors
+            Pairing  ( void ) : StateBase( ) {}
+            Pairing  ( StateBase* _parent ) : StateBase( _parent ) {}
+            ~Pairing ( void ) {}
+          
+            /**
+             * @brief Calls entry() then handles any child
+             *  initialization. Finally calls makeActive on the leaf.
+             */
+            void                     initialize ( void );
+              
+            /**
+             * @brief Runs the entry() function defined in the model.
+             */
+            void                     entry ( void );
+          
+            /**
+             * @brief Runs the exit() function defined in the model.
+             */
+            void                     exit ( void );
+          
+            /**
+             * @brief Runs the tick() function defined in the model and then
+             *  calls _activeState->tick().
+             */
+            void                     tick ( void );
+          
+            /**
+             * @brief The timer period of the state in floating point seconds.
+             *
+             * @return  double  timer period
+             */
+            double                   getTimerPeriod ( void );
+          
+            /**
+             * @brief Calls _activeState->handleEvent( event ), then if the
+             *  event is not 0 (meaning the event was not consumed by
+             *  the child subtree), it checks the event against all internal
+             *  transitions associated with that Event.  If the event is still
+             *  not a 0 (meaning the event was not consumed by the
+             *  internal transitions), then it checks the event against all
+             *  external transitions associated with that Event.
+             *
+             * @param[in] StateMachine::Event* Event needing to be handled
+             *
+             * @return true if event is consumed, false otherwise
+             */
+            bool                     handleEvent ( StateMachine::Event* event );
+          };
+          /**
+           * @brief Declaration for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon : /c/B/0/c/o/K
+           *
+           * States contain other states and can consume generic
+           * StateMachine::Event objects if they have internal or external
+           * transitions on those events and if those transitions' guards are
+           * satisfied. Only one transition can consume an event in a given
+           * state machine.
+           *
+           * There is also a different kind of Event, the tick event, which is
+           * not consumed, but instead executes from the top-level state all
+           * the way to the curently active leaf state.
+           *
+           * Entry and Exit actions also occur whenever a state is entered or
+           * exited, respectively.
+           */
+          class Icon : public StateMachine::StateBase {
+          public:
+          
+            
+            // Timer period
+            static const double timerPeriod;
+          
+            // Constructors
+            Icon  ( void ) : StateBase( ) {}
+            Icon  ( StateBase* _parent ) : StateBase( _parent ) {}
+            ~Icon ( void ) {}
+          
+            /**
+             * @brief Calls entry() then handles any child
+             *  initialization. Finally calls makeActive on the leaf.
+             */
+            void                     initialize ( void );
+              
+            /**
+             * @brief Runs the entry() function defined in the model.
+             */
+            void                     entry ( void );
+          
+            /**
+             * @brief Runs the exit() function defined in the model.
+             */
+            void                     exit ( void );
+          
+            /**
+             * @brief Runs the tick() function defined in the model and then
+             *  calls _activeState->tick().
+             */
+            void                     tick ( void );
+          
+            /**
+             * @brief The timer period of the state in floating point seconds.
+             *
+             * @return  double  timer period
+             */
+            double                   getTimerPeriod ( void );
+          
+            /**
+             * @brief Calls _activeState->handleEvent( event ), then if the
+             *  event is not 0 (meaning the event was not consumed by
+             *  the child subtree), it checks the event against all internal
+             *  transitions associated with that Event.  If the event is still
+             *  not a 0 (meaning the event was not consumed by the
+             *  internal transitions), then it checks the event against all
+             *  external transitions associated with that Event.
+             *
+             * @param[in] StateMachine::Event* Event needing to be handled
+             *
+             * @return true if event is consumed, false otherwise
+             */
+            bool                     handleEvent ( StateMachine::Event* event );
+          };
+          
+          // Timer period
+          static const double timerPeriod;
+        
+          // Constructors
+          Pair_SmartDrive  ( void ) : StateBase( ) {}
+          Pair_SmartDrive  ( StateBase* _parent ) : StateBase( _parent ) {}
+          ~Pair_SmartDrive ( void ) {}
+        
+          /**
+           * @brief Calls entry() then handles any child
+           *  initialization. Finally calls makeActive on the leaf.
+           */
+          void                     initialize ( void );
+            
+          /**
+           * @brief Runs the entry() function defined in the model.
+           */
+          void                     entry ( void );
+        
+          /**
+           * @brief Runs the exit() function defined in the model.
+           */
+          void                     exit ( void );
+        
+          /**
+           * @brief Runs the tick() function defined in the model and then
+           *  calls _activeState->tick().
+           */
+          void                     tick ( void );
+        
+          /**
+           * @brief The timer period of the state in floating point seconds.
+           *
+           * @return  double  timer period
+           */
+          double                   getTimerPeriod ( void );
+        
+          /**
+           * @brief Calls _activeState->handleEvent( event ), then if the
+           *  event is not 0 (meaning the event was not consumed by
+           *  the child subtree), it checks the event against all internal
+           *  transitions associated with that Event.  If the event is still
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -840,10 +862,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -950,10 +972,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1022,10 +1044,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1075,10 +1097,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -1147,10 +1169,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -1238,10 +1260,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1310,10 +1332,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1363,10 +1385,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -1454,10 +1476,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1526,10 +1548,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1579,10 +1601,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -1670,10 +1692,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1742,10 +1764,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1814,10 +1836,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -1867,10 +1889,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -1939,10 +1961,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -1992,10 +2014,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -2102,82 +2124,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
-               *  internal transitions), then it checks the event against all
-               *  external transitions associated with that Event.
-               *
-               * @param[in] StateMachine::Event* Event needing to be handled
-               *
-               * @return true if event is consumed, false otherwise
-               */
-              bool                     handleEvent ( StateMachine::Event* event );
-            };
-            /**
-             * @brief Declaration for PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes : /c/B/0/c/m/R/I
-             *
-             * States contain other states and can consume generic
-             * StateMachine::Event objects if they have internal or external
-             * transitions on those events and if those transitions' guards are
-             * satisfied. Only one transition can consume an event in a given
-             * state machine.
-             *
-             * There is also a different kind of Event, the tick event, which is
-             * not consumed, but instead executes from the top-level state all
-             * the way to the curently active leaf state.
-             *
-             * Entry and Exit actions also occur whenever a state is entered or
-             * exited, respectively.
-             */
-            class Ten_Minutes : public StateMachine::StateBase {
-            public:
-            
-              
-              // Timer period
-              static const double timerPeriod;
-            
-              // Constructors
-              Ten_Minutes  ( void ) : StateBase( ) {}
-              Ten_Minutes  ( StateBase* _parent ) : StateBase( _parent ) {}
-              ~Ten_Minutes ( void ) {}
-            
-              /**
-               * @brief Calls entry() then handles any child
-               *  initialization. Finally calls makeActive on the leaf.
-               */
-              void                     initialize ( void );
-                
-              /**
-               * @brief Runs the entry() function defined in the model.
-               */
-              void                     entry ( void );
-            
-              /**
-               * @brief Runs the exit() function defined in the model.
-               */
-              void                     exit ( void );
-            
-              /**
-               * @brief Runs the tick() function defined in the model and then
-               *  calls _activeState->tick().
-               */
-              void                     tick ( void );
-            
-              /**
-               * @brief The timer period of the state in floating point seconds.
-               *
-               * @return  double  timer period
-               */
-              double                   getTimerPeriod ( void );
-            
-              /**
-               * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
-               *  the child subtree), it checks the event against all internal
-               *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -2246,10 +2196,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -2318,10 +2268,82 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
+               *  internal transitions), then it checks the event against all
+               *  external transitions associated with that Event.
+               *
+               * @param[in] StateMachine::Event* Event needing to be handled
+               *
+               * @return true if event is consumed, false otherwise
+               */
+              bool                     handleEvent ( StateMachine::Event* event );
+            };
+            /**
+             * @brief Declaration for PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes : /c/B/0/c/m/R/I
+             *
+             * States contain other states and can consume generic
+             * StateMachine::Event objects if they have internal or external
+             * transitions on those events and if those transitions' guards are
+             * satisfied. Only one transition can consume an event in a given
+             * state machine.
+             *
+             * There is also a different kind of Event, the tick event, which is
+             * not consumed, but instead executes from the top-level state all
+             * the way to the curently active leaf state.
+             *
+             * Entry and Exit actions also occur whenever a state is entered or
+             * exited, respectively.
+             */
+            class Ten_Minutes : public StateMachine::StateBase {
+            public:
+            
+              
+              // Timer period
+              static const double timerPeriod;
+            
+              // Constructors
+              Ten_Minutes  ( void ) : StateBase( ) {}
+              Ten_Minutes  ( StateBase* _parent ) : StateBase( _parent ) {}
+              ~Ten_Minutes ( void ) {}
+            
+              /**
+               * @brief Calls entry() then handles any child
+               *  initialization. Finally calls makeActive on the leaf.
+               */
+              void                     initialize ( void );
+                
+              /**
+               * @brief Runs the entry() function defined in the model.
+               */
+              void                     entry ( void );
+            
+              /**
+               * @brief Runs the exit() function defined in the model.
+               */
+              void                     exit ( void );
+            
+              /**
+               * @brief Runs the tick() function defined in the model and then
+               *  calls _activeState->tick().
+               */
+              void                     tick ( void );
+            
+              /**
+               * @brief The timer period of the state in floating point seconds.
+               *
+               * @return  double  timer period
+               */
+              double                   getTimerPeriod ( void );
+            
+              /**
+               * @brief Calls _activeState->handleEvent( event ), then if the
+               *  event is not 0 (meaning the event was not consumed by
+               *  the child subtree), it checks the event against all internal
+               *  transitions associated with that Event.  If the event is still
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -2371,10 +2393,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -2462,82 +2484,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
-               *  internal transitions), then it checks the event against all
-               *  external transitions associated with that Event.
-               *
-               * @param[in] StateMachine::Event* Event needing to be handled
-               *
-               * @return true if event is consumed, false otherwise
-               */
-              bool                     handleEvent ( StateMachine::Event* event );
-            };
-            /**
-             * @brief Declaration for PushTracker_HFSM::On::Settings::Time::Set_Date::Years : /c/B/0/c/m/z/X
-             *
-             * States contain other states and can consume generic
-             * StateMachine::Event objects if they have internal or external
-             * transitions on those events and if those transitions' guards are
-             * satisfied. Only one transition can consume an event in a given
-             * state machine.
-             *
-             * There is also a different kind of Event, the tick event, which is
-             * not consumed, but instead executes from the top-level state all
-             * the way to the curently active leaf state.
-             *
-             * Entry and Exit actions also occur whenever a state is entered or
-             * exited, respectively.
-             */
-            class Years : public StateMachine::StateBase {
-            public:
-            
-              
-              // Timer period
-              static const double timerPeriod;
-            
-              // Constructors
-              Years  ( void ) : StateBase( ) {}
-              Years  ( StateBase* _parent ) : StateBase( _parent ) {}
-              ~Years ( void ) {}
-            
-              /**
-               * @brief Calls entry() then handles any child
-               *  initialization. Finally calls makeActive on the leaf.
-               */
-              void                     initialize ( void );
-                
-              /**
-               * @brief Runs the entry() function defined in the model.
-               */
-              void                     entry ( void );
-            
-              /**
-               * @brief Runs the exit() function defined in the model.
-               */
-              void                     exit ( void );
-            
-              /**
-               * @brief Runs the tick() function defined in the model and then
-               *  calls _activeState->tick().
-               */
-              void                     tick ( void );
-            
-              /**
-               * @brief The timer period of the state in floating point seconds.
-               *
-               * @return  double  timer period
-               */
-              double                   getTimerPeriod ( void );
-            
-              /**
-               * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
-               *  the child subtree), it checks the event against all internal
-               *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -2606,10 +2556,10 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -2678,10 +2628,82 @@ namespace StateMachine {
             
               /**
                * @brief Calls _activeState->handleEvent( event ), then if the
-               *  event is not nullptr (meaning the event was not consumed by
+               *  event is not 0 (meaning the event was not consumed by
                *  the child subtree), it checks the event against all internal
                *  transitions associated with that Event.  If the event is still
-               *  not a nullptr (meaning the event was not consumed by the
+               *  not a 0 (meaning the event was not consumed by the
+               *  internal transitions), then it checks the event against all
+               *  external transitions associated with that Event.
+               *
+               * @param[in] StateMachine::Event* Event needing to be handled
+               *
+               * @return true if event is consumed, false otherwise
+               */
+              bool                     handleEvent ( StateMachine::Event* event );
+            };
+            /**
+             * @brief Declaration for PushTracker_HFSM::On::Settings::Time::Set_Date::Years : /c/B/0/c/m/z/X
+             *
+             * States contain other states and can consume generic
+             * StateMachine::Event objects if they have internal or external
+             * transitions on those events and if those transitions' guards are
+             * satisfied. Only one transition can consume an event in a given
+             * state machine.
+             *
+             * There is also a different kind of Event, the tick event, which is
+             * not consumed, but instead executes from the top-level state all
+             * the way to the curently active leaf state.
+             *
+             * Entry and Exit actions also occur whenever a state is entered or
+             * exited, respectively.
+             */
+            class Years : public StateMachine::StateBase {
+            public:
+            
+              
+              // Timer period
+              static const double timerPeriod;
+            
+              // Constructors
+              Years  ( void ) : StateBase( ) {}
+              Years  ( StateBase* _parent ) : StateBase( _parent ) {}
+              ~Years ( void ) {}
+            
+              /**
+               * @brief Calls entry() then handles any child
+               *  initialization. Finally calls makeActive on the leaf.
+               */
+              void                     initialize ( void );
+                
+              /**
+               * @brief Runs the entry() function defined in the model.
+               */
+              void                     entry ( void );
+            
+              /**
+               * @brief Runs the exit() function defined in the model.
+               */
+              void                     exit ( void );
+            
+              /**
+               * @brief Runs the tick() function defined in the model and then
+               *  calls _activeState->tick().
+               */
+              void                     tick ( void );
+            
+              /**
+               * @brief The timer period of the state in floating point seconds.
+               *
+               * @return  double  timer period
+               */
+              double                   getTimerPeriod ( void );
+            
+              /**
+               * @brief Calls _activeState->handleEvent( event ), then if the
+               *  event is not 0 (meaning the event was not consumed by
+               *  the child subtree), it checks the event against all internal
+               *  transitions associated with that Event.  If the event is still
+               *  not a 0 (meaning the event was not consumed by the
                *  internal transitions), then it checks the event against all
                *  external transitions associated with that Event.
                *
@@ -2731,10 +2753,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -2803,10 +2825,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -2856,10 +2878,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -2947,10 +2969,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3019,10 +3041,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3091,10 +3113,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3163,10 +3185,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3216,10 +3238,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -3307,10 +3329,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3379,10 +3401,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3432,10 +3454,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -3485,10 +3507,10 @@ namespace StateMachine {
       
         /**
          * @brief Calls _activeState->handleEvent( event ), then if the
-         *  event is not nullptr (meaning the event was not consumed by
+         *  event is not 0 (meaning the event was not consumed by
          *  the child subtree), it checks the event against all internal
          *  transitions associated with that Event.  If the event is still
-         *  not a nullptr (meaning the event was not consumed by the
+         *  not a 0 (meaning the event was not consumed by the
          *  internal transitions), then it checks the event against all
          *  external transitions associated with that Event.
          *
@@ -3595,10 +3617,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3667,10 +3689,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -3720,10 +3742,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -3792,10 +3814,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -3864,10 +3886,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -3936,10 +3958,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -4027,10 +4049,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -4099,10 +4121,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -4152,10 +4174,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -4243,10 +4265,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -4315,10 +4337,10 @@ namespace StateMachine {
           
             /**
              * @brief Calls _activeState->handleEvent( event ), then if the
-             *  event is not nullptr (meaning the event was not consumed by
+             *  event is not 0 (meaning the event was not consumed by
              *  the child subtree), it checks the event against all internal
              *  transitions associated with that Event.  If the event is still
-             *  not a nullptr (meaning the event was not consumed by the
+             *  not a 0 (meaning the event was not consumed by the
              *  internal transitions), then it checks the event against all
              *  external transitions associated with that Event.
              *
@@ -4368,10 +4390,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -4440,10 +4462,10 @@ namespace StateMachine {
         
           /**
            * @brief Calls _activeState->handleEvent( event ), then if the
-           *  event is not nullptr (meaning the event was not consumed by
+           *  event is not 0 (meaning the event was not consumed by
            *  the child subtree), it checks the event against all internal
            *  transitions associated with that Event.  If the event is still
-           *  not a nullptr (meaning the event was not consumed by the
+           *  not a 0 (meaning the event was not consumed by the
            *  internal transitions), then it checks the event against all
            *  external transitions associated with that Event.
            *
@@ -4493,10 +4515,10 @@ namespace StateMachine {
       
         /**
          * @brief Calls _activeState->handleEvent( event ), then if the
-         *  event is not nullptr (meaning the event was not consumed by
+         *  event is not 0 (meaning the event was not consumed by
          *  the child subtree), it checks the event against all internal
          *  transitions associated with that Event.  If the event is still
-         *  not a nullptr (meaning the event was not consumed by the
+         *  not a 0 (meaning the event was not consumed by the
          *  internal transitions), then it checks the event against all
          *  external transitions associated with that Event.
          *
@@ -4565,10 +4587,10 @@ namespace StateMachine {
       
         /**
          * @brief Calls _activeState->handleEvent( event ), then if the
-         *  event is not nullptr (meaning the event was not consumed by
+         *  event is not 0 (meaning the event was not consumed by
          *  the child subtree), it checks the event against all internal
          *  transitions associated with that Event.  If the event is still
-         *  not a nullptr (meaning the event was not consumed by the
+         *  not a 0 (meaning the event was not consumed by the
          *  internal transitions), then it checks the event against all
          *  external transitions associated with that Event.
          *
@@ -4637,10 +4659,10 @@ namespace StateMachine {
       
         /**
          * @brief Calls _activeState->handleEvent( event ), then if the
-         *  event is not nullptr (meaning the event was not consumed by
+         *  event is not 0 (meaning the event was not consumed by
          *  the child subtree), it checks the event against all internal
          *  transitions associated with that Event.  If the event is still
-         *  not a nullptr (meaning the event was not consumed by the
+         *  not a 0 (meaning the event was not consumed by the
          *  internal transitions), then it checks the event against all
          *  external transitions associated with that Event.
          *
@@ -4690,10 +4712,82 @@ namespace StateMachine {
     
       /**
        * @brief Calls _activeState->handleEvent( event ), then if the
-       *  event is not nullptr (meaning the event was not consumed by
+       *  event is not 0 (meaning the event was not consumed by
        *  the child subtree), it checks the event against all internal
        *  transitions associated with that Event.  If the event is still
-       *  not a nullptr (meaning the event was not consumed by the
+       *  not a 0 (meaning the event was not consumed by the
+       *  internal transitions), then it checks the event against all
+       *  external transitions associated with that Event.
+       *
+       * @param[in] StateMachine::Event* Event needing to be handled
+       *
+       * @return true if event is consumed, false otherwise
+       */
+      bool                     handleEvent ( StateMachine::Event* event );
+    };
+    /**
+     * @brief Declaration for PushTracker_HFSM::OTA : /c/B/F
+     *
+     * States contain other states and can consume generic
+     * StateMachine::Event objects if they have internal or external
+     * transitions on those events and if those transitions' guards are
+     * satisfied. Only one transition can consume an event in a given
+     * state machine.
+     *
+     * There is also a different kind of Event, the tick event, which is
+     * not consumed, but instead executes from the top-level state all
+     * the way to the curently active leaf state.
+     *
+     * Entry and Exit actions also occur whenever a state is entered or
+     * exited, respectively.
+     */
+    class OTA : public StateMachine::StateBase {
+    public:
+    
+      
+      // Timer period
+      static const double timerPeriod;
+    
+      // Constructors
+      OTA  ( void ) : StateBase( ) {}
+      OTA  ( StateBase* _parent ) : StateBase( _parent ) {}
+      ~OTA ( void ) {}
+    
+      /**
+       * @brief Calls entry() then handles any child
+       *  initialization. Finally calls makeActive on the leaf.
+       */
+      void                     initialize ( void );
+        
+      /**
+       * @brief Runs the entry() function defined in the model.
+       */
+      void                     entry ( void );
+    
+      /**
+       * @brief Runs the exit() function defined in the model.
+       */
+      void                     exit ( void );
+    
+      /**
+       * @brief Runs the tick() function defined in the model and then
+       *  calls _activeState->tick().
+       */
+      void                     tick ( void );
+    
+      /**
+       * @brief The timer period of the state in floating point seconds.
+       *
+       * @return  double  timer period
+       */
+      double                   getTimerPeriod ( void );
+    
+      /**
+       * @brief Calls _activeState->handleEvent( event ), then if the
+       *  event is not 0 (meaning the event was not consumed by
+       *  the child subtree), it checks the event against all internal
+       *  transitions associated with that Event.  If the event is still
+       *  not a 0 (meaning the event was not consumed by the
        *  internal transitions), then it checks the event against all
        *  external transitions associated with that Event.
        *
@@ -4762,10 +4856,10 @@ namespace StateMachine {
     
       /**
        * @brief Calls _activeState->handleEvent( event ), then if the
-       *  event is not nullptr (meaning the event was not consumed by
+       *  event is not 0 (meaning the event was not consumed by
        *  the child subtree), it checks the event against all internal
        *  transitions associated with that Event.  If the event is still
-       *  not a nullptr (meaning the event was not consumed by the
+       *  not a 0 (meaning the event was not consumed by the
        *  internal transitions), then it checks the event against all
        *  external transitions associated with that Event.
        *
@@ -4825,13 +4919,13 @@ extern StateMachine::PushTracker_HFSM::On::Power_Assist_Toggle *const PUSHTRACKE
 extern StateMachine::PushTracker_HFSM::On::Display_Logo *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_LOGO_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Idle *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ;
-extern StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ;
-extern StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ;
-extern StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Exit *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__EXIT_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Pair_Phone *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Pair_Phone::Pairing *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Pair_Phone::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ;
+extern StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ;
+extern StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ;
+extern StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__ICON_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::SmartDrive *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__SMARTDRIVE_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::SmartDrive::Tap_Sensitivity *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__SMARTDRIVE_OBJ__TAP_SENSITIVITY_OBJ;
@@ -4852,14 +4946,14 @@ extern StateMachine::PushTracker_HFSM::On::Settings::SmartDrive::Exit *const PUS
 extern StateMachine::PushTracker_HFSM::On::Settings::Time *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Minutes *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ;
-extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Format *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__FORMAT_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Hours *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__HOURS_OBJ;
+extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Month *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__MONTH_OBJ;
-extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Years *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Day *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__DAY_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Ten_Years *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__TEN_YEARS_OBJ;
+extern StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Years *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::Time::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__ICON_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::About *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__ABOUT_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Settings::About::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__ABOUT_OBJ__ICON_OBJ;
@@ -4885,6 +4979,7 @@ extern StateMachine::PushTracker_HFSM::On::Display_Info::Coast::Icon *const PUSH
 extern StateMachine::PushTracker_HFSM::On::Display_Info::Low_Battery_Warning *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ__LOW_BATTERY_WARNING_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Scan_for_App *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ;
 extern StateMachine::PushTracker_HFSM::On::Show_Speed *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SHOW_SPEED_OBJ;
+extern StateMachine::PushTracker_HFSM::OTA *const PUSHTRACKER_HFSM_OBJ__OTA_OBJ;
 extern StateMachine::PushTracker_HFSM::Sleep *const PUSHTRACKER_HFSM_OBJ__SLEEP_OBJ;
 
 #endif // __GENERATED_STATES_INCLUDE_GUARD__

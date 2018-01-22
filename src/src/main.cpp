@@ -25,28 +25,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  * ========================================================================== */
-#define CC2541
-extern "C" {
-#include <blestack/blestack.h>
-#include <blestack/gap.h>
-#include <blestack/hw.h>
-#include <blestack/dma.h>
-  
-#include "adc.h"
-#include "ble.h"
-#include "stubs.h"
-#include "i2c.h"
-#include "oled.h"
-#include "display_data.h"
-#include "acc.h"
-#include "ioint.h"
-#include "leds.h"
-#include "motor.h"
-#include "pstore.h"
-#include "rtc.h"
-#include "globals.h"
-#include "Timer1.h"
-}
 
 #include "PushTracker_HFSM_Events.hpp"
 #include "PushTracker_HFSM_GeneratedStates.hpp"

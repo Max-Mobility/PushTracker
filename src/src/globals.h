@@ -1,8 +1,6 @@
 #ifndef GLOBALS_INCLUDE_GUARD_
 #define GLOBALS_INCLUDE_GUARD_
 
-#ifndef GLOBALS_H
-#define GLOBALS_H
 #include <blestack/hw.h>
 #include <blestack/task.h>
 #include <blestack/config.h>
@@ -629,8 +627,5 @@ struct VersionInfo {
   uint8_t             smartDriveBluetooth;
 };
 extern struct VersionInfo versionInfo;
-
-#endif
-
 
 #endif //GLOBALS_INCLUDE_GUARD_

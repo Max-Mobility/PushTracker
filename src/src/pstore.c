@@ -1,6 +1,4 @@
 #include "pstore.h"
-#include "pstore.h"
-#include "pstore.h"
 #include <string.h>
 #include <blestack/config.h>
 

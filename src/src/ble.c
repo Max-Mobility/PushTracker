@@ -1,6 +1,4 @@
 #include "ble.h"
-#include "ble.h"
-#include "ble.h"
 #include <string.h>
 #include <stdio.h>
 #include <blestack/util.h>

@@ -18,7 +18,7 @@ extern enum motor_on_off VMotorStatus;
 void set_motor(enum motor_on_off on_off);
 
 
-void init_motor();
+void init_motor(void);
 
 
 void vibrate_motor(uint8 vibration);

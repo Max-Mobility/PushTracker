@@ -21,15 +21,6 @@ namespace StateMachine {
   
   StateMachine::PushTracker_HFSM::On::Settings        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ_stateObj;
-  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ );
-  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ_stateObj;
-  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ );
-  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ_stateObj;
-  
-  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ );
-  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ_stateObj;
-  
-  
   StateMachine::PushTracker_HFSM::On::Settings::Exit        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__EXIT_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Exit *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__EXIT_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__EXIT_OBJ_stateObj;
   
@@ -40,6 +31,15 @@ namespace StateMachine {
   
   StateMachine::PushTracker_HFSM::On::Settings::Pair_Phone::Icon        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Pair_Phone::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ_stateObj;
+  
+  
+  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ );
+  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ_stateObj;
+  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ );
+  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ_stateObj;
+  
+  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ );
+  StateMachine::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ_stateObj;
   
   
   StateMachine::PushTracker_HFSM::On::Settings::Icon        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__ICON_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ );
@@ -100,14 +100,14 @@ namespace StateMachine {
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Minutes        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Minutes *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ_stateObj;
   
-  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ );
-  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ_stateObj;
-  
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Format        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__FORMAT_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Format *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__FORMAT_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__FORMAT_OBJ_stateObj;
   
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Hours        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__HOURS_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Hours *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__HOURS_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__HOURS_OBJ_stateObj;
+  
+  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ );
+  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ_stateObj;
   
   
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ );
@@ -115,14 +115,14 @@ namespace StateMachine {
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Month        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__MONTH_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Month *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__MONTH_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__MONTH_OBJ_stateObj;
   
-  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Years        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ );
-  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Years *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ_stateObj;
-  
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Day        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__DAY_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Day *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__DAY_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__DAY_OBJ_stateObj;
   
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Ten_Years        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__TEN_YEARS_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ );
   StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Ten_Years *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__TEN_YEARS_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__TEN_YEARS_OBJ_stateObj;
+  
+  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Years        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ );
+  StateMachine::PushTracker_HFSM::On::Settings::Time::Set_Date::Years *const PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ = &PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_DATE_OBJ__YEARS_OBJ_stateObj;
   
   
   StateMachine::PushTracker_HFSM::On::Settings::Time::Icon        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__ICON_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ );
@@ -207,6 +207,9 @@ namespace StateMachine {
   
   
   
+  StateMachine::PushTracker_HFSM::OTA        PUSHTRACKER_HFSM_OBJ__OTA_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ );
+  StateMachine::PushTracker_HFSM::OTA *const PUSHTRACKER_HFSM_OBJ__OTA_OBJ = &PUSHTRACKER_HFSM_OBJ__OTA_OBJ_stateObj;
+  
   StateMachine::PushTracker_HFSM::Sleep        PUSHTRACKER_HFSM_OBJ__SLEEP_OBJ_stateObj( PUSHTRACKER_HFSM_OBJ );
   StateMachine::PushTracker_HFSM::Sleep *const PUSHTRACKER_HFSM_OBJ__SLEEP_OBJ = &PUSHTRACKER_HFSM_OBJ__SLEEP_OBJ_stateObj;
   
@@ -227,7 +230,46 @@ namespace StateMachine {
     std::cout << "PushTracker HFSM:/c/B HFSM Initialization" << std::endl;
     #endif
     //::::/c/B::::Initialization::::
-    
+    EA=1;
+init_io_int();
+init_motor();
+init_leds();
+enable_acc(acc_on);
+enable_i2c(i2c_on);
+init_i2c();
+//init_acc();
+rtc_init();
+ps_load_time();
+ps_load_currentDay_info();
+ps_load_batCali();
+ps_load_error();
+ps_load_motorDistance();
+set_rtc();
+set_oled_power(oled_on);
+set_oled_reset(oled_reset_on);
+set_oled_reset(oled_reset_off);
+delay_ms(10);
+oled_init();
+delay_ms(10);
+clear_dram();
+scrolling=scroll_hor;
+dram_ptr=0;
+display_write();
+init_adc();
+//SLEEP_BLOCK(0X04);
+smp_set_bondable(1);
+smp_set_parameters(0,7,smp_io_capability_noinputnooutput );// no mitm no input no output
+SD_status=SD_off;
+cleaningFlash();
+init_flash();
+journeyState = Journey_State_Stopped;
+loadSettings();
+ps_load_version();
+rtc_time = 0;
+/*
+    dfu_pointer = FIRST_USER_PAGE_ADDRESS;
+    */
+WDCTL = 0x08;// start watchdog
     // now set the states up properly
     // External Transition : Action for: /c/B/4
     #ifdef DEBUG_OUTPUT
@@ -298,7 +340,11 @@ namespace StateMachine {
     #endif
     // Entry action for this state
     //::::/c/B/0::::Entry::::
-    
+    btn_left_hold = 0;
+  enable_acc(acc_on);
+  enable_i2c(i2c_on);
+  init_acc();
+  display_sleep(oled_sleep);
   }
   
   void PushTracker_HFSM::On::exit ( void ) {
@@ -316,7 +362,17 @@ namespace StateMachine {
     #endif
     // Call the Tick Action for this state
     //::::/c/B/0::::Tick::::
-    
+          if(quad_mode_ready&&(SD_status==SD_off))
+        {
+          quad_mode_time +=TICKS_TO_MS((uint32)(1.0 * 1000.0 ));
+          if(quad_mode_time>15000) // 15s 
+          {
+            if((btn_left_hold_time==0)&&(btn_right_hold_time==0))
+            {quad_mode_ready = 0;
+             set_led(blue2,led_off);
+            }
+          }
+        }
     if ( _activeState != 0 && _activeState != this )
       _activeState->tick();
   }
@@ -331,9 +387,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -443,6 +496,36 @@ namespace StateMachine {
     if (!handled) {
       // handle external transitions here
       switch ( event->type() ) {
+      case Event::START_OTA:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/C" << std::endl;
+          #endif
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ->exitChildren();
+        // State : exit for: /c/B/0
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ->exit();
+        // External Transition : Action for: /c/B/C
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/C" << std::endl;
+        #endif
+        
+        //::::/c/B/C::::Action::::
+        
+        // State : entry for: /c/B/F
+        PUSHTRACKER_HFSM_OBJ__OTA_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On->PushTracker_HFSM::OTA" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__OTA_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
       case Event::POWER_OFF:
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
@@ -528,9 +611,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -610,6 +690,15 @@ namespace StateMachine {
     // Entry action for this state
     //::::/c/B/0/B::::Entry::::
     
+  displayDone =0 ;
+  display_sleep(oled_wakeup);
+  clear_dram();
+  dram_ptr=0;
+  scrolling=scroll_hor;
+  display_maxBoldIcon(0);
+  display_write();
+  state_time=0;
+  
   }
   
   void PushTracker_HFSM::On::Display_Logo::exit ( void ) {
@@ -627,7 +716,11 @@ namespace StateMachine {
     #endif
     // Call the Tick Action for this state
     //::::/c/B/0/B::::Tick::::
-    
+            state_time+=TICKS_TO_MS((uint32)(1.0 * 1000.0));
+          if(state_time>1500)//  1.5s
+          {
+            eventFactory->spawnEvent( StateMachine::Event::TIMEOUT );
+          }
     if ( _activeState != 0 && _activeState != this )
       _activeState->tick();
   }
@@ -642,9 +735,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -750,7 +840,23 @@ namespace StateMachine {
     #endif
     // Entry action for this state
     //::::/c/B/0/N::::Entry::::
-    
+    tap=0;
+  btn_left_pressed=0;
+  virtual_btn_left_pressed=0;
+  btn_right_pressed=0;
+  clear_dram();
+  dram_ptr=0;
+  scrolling=scroll_hor;
+  display_write();
+  display_sleep(oled_sleep);
+  
+  if(SD_status==SD_on)
+  {
+    ble_radio_state = Radio_on;
+    scanningDu_start();
+  }
+      
+  set_led_event();
   }
   
   void PushTracker_HFSM::On::Idle::exit ( void ) {
@@ -783,9 +889,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -854,88 +957,6 @@ namespace StateMachine {
           handled = true;
           }
         break;
-      case Event::SCAN_APP:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/C" << std::endl;
-          #endif
-          // Going into a choice pseudo-state, let it handle its
-          // guards and perform the state transition
-          if (false) { } // makes geneeration easier :)
-          //::::/c/B/0/D::::Guard::::
-          else if ( PhonePaired ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "GUARD [ PhonePaired ] for EXTERNAL TRANSITION:/c/B/0/D evaluated to TRUE" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exitChildren();
-          // State : exit for: /c/B/0/N
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/C
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/C" << std::endl;
-          #endif
-          
-          //::::/c/B/0/C::::Action::::
-          
-          // External Transition : Action for: /c/B/0/D
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/D" << std::endl;
-          #endif
-          
-          //::::/c/B/0/D::::Action::::
-          
-          // State : entry for: /c/B/0/t
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Idle->PushTracker_HFSM::On::Scan_for_App" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/o" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exitChildren();
-          // State : exit for: /c/B/0/N
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/C
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/C" << std::endl;
-          #endif
-          
-          //::::/c/B/0/C::::Action::::
-          
-          // External Transition : Action for: /c/B/0/o
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/o" << std::endl;
-          #endif
-          
-          //::::/c/B/0/o::::Action::::
-          
-          // State : entry for: /c/B/0/c
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ->entry();
-          // State : entry for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Idle->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
-        break;
       case Event::POWER_ASSIST_TOGGLE:
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
@@ -982,7 +1003,7 @@ namespace StateMachine {
             }
           else if ( true ) {
             #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/L" << std::endl;
+            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/r" << std::endl;
             #endif
             // Transitioning states!
             // Call all from prev state down exits
@@ -996,16 +1017,16 @@ namespace StateMachine {
           
           //::::/c/B/0/X::::Action::::
           
-          // External Transition : Action for: /c/B/0/L
+          // External Transition : Action for: /c/B/0/r
           #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/L" << std::endl;
+          std::cout << "TRANSITION::ACTION for /c/B/0/r" << std::endl;
           #endif
           
-          //::::/c/B/0/L::::Action::::
+          //::::/c/B/0/r::::Action::::
           
           // State : entry for: /c/B/0/c
           PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ->entry();
-          // State : entry for: /c/B/0/c/3
+          // State : entry for: /c/B/0/c/o
           PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->entry();
           #ifdef DEBUG_OUTPUT
           std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Idle->PushTracker_HFSM::On::Settings::Pair_SmartDrive" << std::endl;
@@ -1078,6 +1099,88 @@ namespace StateMachine {
           handled = true;
           }
         break;
+      case Event::SCAN_APP:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/C" << std::endl;
+          #endif
+          // Going into a choice pseudo-state, let it handle its
+          // guards and perform the state transition
+          if (false) { } // makes geneeration easier :)
+          //::::/c/B/0/D::::Guard::::
+          else if ( PhonePaired ) {
+            #ifdef DEBUG_OUTPUT
+            std::cout << "GUARD [ PhonePaired ] for EXTERNAL TRANSITION:/c/B/0/D evaluated to TRUE" << std::endl;
+            #endif
+            // Transitioning states!
+            // Call all from prev state down exits
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exitChildren();
+          // State : exit for: /c/B/0/N
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exit();
+          // External Transition : Action for: /c/B/0/C
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/C" << std::endl;
+          #endif
+          
+          //::::/c/B/0/C::::Action::::
+          
+          // External Transition : Action for: /c/B/0/D
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/D" << std::endl;
+          #endif
+          
+          //::::/c/B/0/D::::Action::::
+          
+          // State : entry for: /c/B/0/t
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->entry();
+          #ifdef DEBUG_OUTPUT
+          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Idle->PushTracker_HFSM::On::Scan_for_App" << std::endl;
+          #endif
+          
+            // going into regular state
+            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->initialize();
+            // make sure nothing else handles this event
+            handled = true;
+            }
+          else if ( true ) {
+            #ifdef DEBUG_OUTPUT
+            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/f" << std::endl;
+            #endif
+            // Transitioning states!
+            // Call all from prev state down exits
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exitChildren();
+          // State : exit for: /c/B/0/N
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__IDLE_OBJ->exit();
+          // External Transition : Action for: /c/B/0/C
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/C" << std::endl;
+          #endif
+          
+          //::::/c/B/0/C::::Action::::
+          
+          // External Transition : Action for: /c/B/0/f
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/f" << std::endl;
+          #endif
+          
+          //::::/c/B/0/f::::Action::::
+          
+          // State : entry for: /c/B/0/c
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ->entry();
+          // State : entry for: /c/B/0/c/s
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
+          #ifdef DEBUG_OUTPUT
+          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Idle->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
+          #endif
+          
+            // going into regular state
+            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
+            // make sure nothing else handles this event
+            handled = true;
+            }
+        }
+        break;
       default:
         break;
       }
@@ -1146,9 +1249,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -1267,569 +1367,6 @@ namespace StateMachine {
     }
     return handled;
   }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_SmartDrive : /c/B/0/c/3  * * */
-  // Timer period
-  const double PushTracker_HFSM::On::Settings::Pair_SmartDrive::timerPeriod = 0;
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::initialize ( void ) {
-    // External Transition : Action for: /c/B/0/c/3/Y
-    #ifdef DEBUG_OUTPUT
-    std::cout << "TRANSITION::ACTION for /c/B/0/c/3/Y" << std::endl;
-    #endif
-    
-    //::::/c/B/0/c/3/Y::::Action::::
-    
-    // State : entry for: /c/B/0/c/3/K
-    PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->entry();
-    
-    // initialize our new active state
-    PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->initialize();
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::entry ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_SmartDrive::/c/B/0/c/3" << std::endl;
-    #endif
-    // Entry action for this state
-    //::::/c/B/0/c/3::::Entry::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::exit ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_SmartDrive::/c/B/0/c/3" << std::endl;
-    #endif
-    // Call the Exit Action for this state
-    //::::/c/B/0/c/3::::Exit::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::tick ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_SmartDrive::/c/B/0/c/3" << std::endl;
-    #endif
-    // Call the Tick Action for this state
-    //::::/c/B/0/c/3::::Tick::::
-    
-    if ( _activeState != 0 && _activeState != this )
-      _activeState->tick();
-  }
-  
-  double PushTracker_HFSM::On::Settings::Pair_SmartDrive::getTimerPeriod ( void ) {
-    return timerPeriod;
-  }
-  
-  bool PushTracker_HFSM::On::Settings::Pair_SmartDrive::handleEvent ( StateMachine::Event* event ) {
-    bool handled = false;
-  
-    // take care of all event types that this branch will not handle -
-    // for more consistent run-time performnace
-    switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
-    case Event::CONNECTED:
-      handled = true;
-      break;
-    case Event::ENTER_SETTINGS:
-      handled = true;
-      break;
-    case Event::MOTOR_OFF:
-      handled = true;
-      break;
-    case Event::MOTOR_ON:
-      handled = true;
-      break;
-    case Event::NEXT:
-      handled = true;
-      break;
-    case Event::PAIRED:
-      handled = true;
-      break;
-    case Event::POWER_ASSIST_TOGGLE:
-      handled = true;
-      break;
-    case Event::POWER_ON:
-      handled = true;
-      break;
-    case Event::SCAN_APP:
-      handled = true;
-      break;
-    case Event::SELECT:
-      handled = true;
-      break;
-    case Event::TAP:
-      handled = true;
-      break;
-    default:
-      break;
-    }
-  
-    if (handled) {
-      // we didn't actually handle the event, but return anyway
-      return false;
-    }
-  
-    // handle internal transitions first
-    switch ( event->type() ) {
-    default:
-      break;
-    }
-    if (!handled) {
-      // handle external transitions here
-      switch ( event->type() ) {
-      default:
-        break;
-      }
-    }
-    if (!handled) {
-      // now check parent states
-      handled = _parentState->handleEvent( event );
-    }
-    return handled;
-  }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing : /c/B/0/c/3/s  * * */
-  // Timer period
-  const double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::timerPeriod = 1;
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::initialize ( void ) {
-    // if we're a leaf state, make sure we're active
-    makeActive();
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::entry ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::/c/B/0/c/3/s" << std::endl;
-    #endif
-    // Entry action for this state
-    //::::/c/B/0/c/3/s::::Entry::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::exit ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::/c/B/0/c/3/s" << std::endl;
-    #endif
-    // Call the Exit Action for this state
-    //::::/c/B/0/c/3/s::::Exit::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::tick ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::/c/B/0/c/3/s" << std::endl;
-    #endif
-    // Call the Tick Action for this state
-    //::::/c/B/0/c/3/s::::Tick::::
-    
-    if ( _activeState != 0 && _activeState != this )
-      _activeState->tick();
-  }
-  
-  double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::getTimerPeriod ( void ) {
-    return timerPeriod;
-  }
-  
-  bool PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::handleEvent ( StateMachine::Event* event ) {
-    bool handled = false;
-  
-    // take care of all event types that this branch will not handle -
-    // for more consistent run-time performnace
-    switch ( event->type() ) {
-    case Event::CONNECTED:
-      handled = true;
-      break;
-    case Event::ENTER_SETTINGS:
-      handled = true;
-      break;
-    case Event::MOTOR_OFF:
-      handled = true;
-      break;
-    case Event::MOTOR_ON:
-      handled = true;
-      break;
-    case Event::NEXT:
-      handled = true;
-      break;
-    case Event::POWER_ASSIST_TOGGLE:
-      handled = true;
-      break;
-    case Event::POWER_ON:
-      handled = true;
-      break;
-    case Event::SCAN_APP:
-      handled = true;
-      break;
-    case Event::SELECT:
-      handled = true;
-      break;
-    case Event::TAP:
-      handled = true;
-      break;
-    default:
-      break;
-    }
-  
-    if (handled) {
-      // we didn't actually handle the event, but return anyway
-      return false;
-    }
-  
-    // handle internal transitions first
-    switch ( event->type() ) {
-    case Event::BUTTON_RIGHT:
-      if ( false ) {  // makes generation easier :)
-      }
-      else if (true) {
-        #ifdef DEBUG_OUTPUT
-        std::cout << "NO GUARD on INTERNAL TRANSITION:/c/B/0/c/3/s/t" << std::endl;
-        #endif
-        // run transition action
-        //::::/c/B/0/c/3/s/t::::Action::::
-        eventFactory->spawnEvent( StateMachine::Event::CANCEL );
-        // make sure nothing else handles this event
-        handled = true;
-      }
-      break;
-    default:
-      break;
-    }
-    if (!handled) {
-      // handle external transitions here
-      switch ( event->type() ) {
-      case Event::TIMEOUT:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/3/o9" << std::endl;
-          #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/O" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/3/s
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exit();
-          // State : exit for: /c/B/0/c/3
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/3/o9
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/3/o9" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/3/o9::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/O
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/O" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/O::::Action::::
-          
-          // State : entry for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
-        break;
-      case Event::CANCEL:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/3/R4" << std::endl;
-          #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/O" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/3/s
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exit();
-          // State : exit for: /c/B/0/c/3
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/3/R4
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/3/R4" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/3/R4::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/O
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/O" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/O::::Action::::
-          
-          // State : entry for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
-        break;
-      case Event::PAIRED:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/3/d" << std::endl;
-          #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/O" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/3/s
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exit();
-          // State : exit for: /c/B/0/c/3
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/3/d
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/3/d" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/3/d::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/O
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/O" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/O::::Action::::
-          
-          // State : entry for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
-        break;
-      default:
-        break;
-      }
-    }
-    if (!handled) {
-      // now check parent states
-      handled = _parentState->handleEvent( event );
-    }
-    return handled;
-  }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon : /c/B/0/c/3/K  * * */
-  // Timer period
-  const double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::timerPeriod = 1;
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::initialize ( void ) {
-    // if we're a leaf state, make sure we're active
-    makeActive();
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::entry ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::/c/B/0/c/3/K" << std::endl;
-    #endif
-    // Entry action for this state
-    //::::/c/B/0/c/3/K::::Entry::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::exit ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::/c/B/0/c/3/K" << std::endl;
-    #endif
-    // Call the Exit Action for this state
-    //::::/c/B/0/c/3/K::::Exit::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::tick ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::/c/B/0/c/3/K" << std::endl;
-    #endif
-    // Call the Tick Action for this state
-    //::::/c/B/0/c/3/K::::Tick::::
-    
-    if ( _activeState != 0 && _activeState != this )
-      _activeState->tick();
-  }
-  
-  double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::getTimerPeriod ( void ) {
-    return timerPeriod;
-  }
-  
-  bool PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::handleEvent ( StateMachine::Event* event ) {
-    bool handled = false;
-  
-    // take care of all event types that this branch will not handle -
-    // for more consistent run-time performnace
-    switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
-    case Event::CONNECTED:
-      handled = true;
-      break;
-    case Event::ENTER_SETTINGS:
-      handled = true;
-      break;
-    case Event::MOTOR_OFF:
-      handled = true;
-      break;
-    case Event::MOTOR_ON:
-      handled = true;
-      break;
-    case Event::PAIRED:
-      handled = true;
-      break;
-    case Event::POWER_ASSIST_TOGGLE:
-      handled = true;
-      break;
-    case Event::POWER_ON:
-      handled = true;
-      break;
-    case Event::SCAN_APP:
-      handled = true;
-      break;
-    case Event::TAP:
-      handled = true;
-      break;
-    default:
-      break;
-    }
-  
-    if (handled) {
-      // we didn't actually handle the event, but return anyway
-      return false;
-    }
-  
-    // handle internal transitions first
-    switch ( event->type() ) {
-    default:
-      break;
-    }
-    if (!handled) {
-      // handle external transitions here
-      switch ( event->type() ) {
-      case Event::SELECT:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/3/o" << std::endl;
-          #endif
-          // Transitioning states!
-          // Call all from prev state down exits
-        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->exitChildren();
-        // State : exit for: /c/B/0/c/3/K
-        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->exit();
-        // External Transition : Action for: /c/B/0/c/3/o
-        #ifdef DEBUG_OUTPUT
-        std::cout << "TRANSITION::ACTION for /c/B/0/c/3/o" << std::endl;
-        #endif
-        
-        //::::/c/B/0/c/3/o::::Action::::
-        
-        // State : entry for: /c/B/0/c/3/s
-        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->entry();
-        #ifdef DEBUG_OUTPUT
-        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon->PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing" << std::endl;
-        #endif
-        
-          // going into regular state
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->initialize();
-          // make sure nothing else handles this event
-          handled = true;
-          }
-        break;
-      case Event::NEXT:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/3/T" << std::endl;
-          #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/O" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/3/K
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->exit();
-          // State : exit for: /c/B/0/c/3
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/3/T
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/3/T" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/3/T::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/O
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/O" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/O::::Action::::
-          
-          // State : entry for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
-        break;
-      default:
-        break;
-      }
-    }
-    if (!handled) {
-      // now check parent states
-      handled = _parentState->handleEvent( event );
-    }
-    return handled;
-  }
   /* * *  Definitions for PushTracker_HFSM::On::Settings::Exit : /c/B/0/c/6  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Exit::timerPeriod = 1;
@@ -1878,9 +1415,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -2012,19 +1546,19 @@ namespace StateMachine {
     }
     return handled;
   }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_Phone : /c/B/0/c/E  * * */
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_Phone : /c/B/0/c/s  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Pair_Phone::timerPeriod = 0;
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::initialize ( void ) {
-    // External Transition : Action for: /c/B/0/c/E/D
+    // External Transition : Action for: /c/B/0/c/s/D
     #ifdef DEBUG_OUTPUT
-    std::cout << "TRANSITION::ACTION for /c/B/0/c/E/D" << std::endl;
+    std::cout << "TRANSITION::ACTION for /c/B/0/c/s/D" << std::endl;
     #endif
     
-    //::::/c/B/0/c/E/D::::Action::::
+    //::::/c/B/0/c/s/D::::Action::::
     
-    // State : entry for: /c/B/0/c/E/b
+    // State : entry for: /c/B/0/c/s/b
     PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->entry();
     
     // initialize our new active state
@@ -2033,28 +1567,28 @@ namespace StateMachine {
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::entry ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_Phone::/c/B/0/c/E" << std::endl;
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_Phone::/c/B/0/c/s" << std::endl;
     #endif
     // Entry action for this state
-    //::::/c/B/0/c/E::::Entry::::
+    //::::/c/B/0/c/s::::Entry::::
     
   }
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::exit ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_Phone::/c/B/0/c/E" << std::endl;
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_Phone::/c/B/0/c/s" << std::endl;
     #endif
     // Call the Exit Action for this state
-    //::::/c/B/0/c/E::::Exit::::
+    //::::/c/B/0/c/s::::Exit::::
     
   }
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::tick ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_Phone::/c/B/0/c/E" << std::endl;
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_Phone::/c/B/0/c/s" << std::endl;
     #endif
     // Call the Tick Action for this state
-    //::::/c/B/0/c/E::::Tick::::
+    //::::/c/B/0/c/s::::Tick::::
     
     if ( _activeState != 0 && _activeState != this )
       _activeState->tick();
@@ -2070,9 +1604,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -2083,9 +1614,6 @@ namespace StateMachine {
       handled = true;
       break;
     case Event::MOTOR_ON:
-      handled = true;
-      break;
-    case Event::NEXT:
       handled = true;
       break;
     case Event::PAIRED:
@@ -2123,6 +1651,36 @@ namespace StateMachine {
     if (!handled) {
       // handle external transitions here
       switch ( event->type() ) {
+      case Event::NEXT:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/A" << std::endl;
+          #endif
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/s
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/A
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/A" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/A::::Action::::
+        
+        // State : entry for: /c/B/0/c/o
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone->PushTracker_HFSM::On::Settings::Pair_SmartDrive" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
       default:
         break;
       }
@@ -2133,7 +1691,7 @@ namespace StateMachine {
     }
     return handled;
   }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_Phone::Pairing : /c/B/0/c/E/k  * * */
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_Phone::Pairing : /c/B/0/c/s/k  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::timerPeriod = 1;
   
@@ -2144,28 +1702,28 @@ namespace StateMachine {
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::entry ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::/c/B/0/c/E/k" << std::endl;
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::/c/B/0/c/s/k" << std::endl;
     #endif
     // Entry action for this state
-    //::::/c/B/0/c/E/k::::Entry::::
+    //::::/c/B/0/c/s/k::::Entry::::
     
   }
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::exit ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::/c/B/0/c/E/k" << std::endl;
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::/c/B/0/c/s/k" << std::endl;
     #endif
     // Call the Exit Action for this state
-    //::::/c/B/0/c/E/k::::Exit::::
+    //::::/c/B/0/c/s/k::::Exit::::
     
   }
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::tick ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::/c/B/0/c/E/k" << std::endl;
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_Phone::Pairing::/c/B/0/c/s/k" << std::endl;
     #endif
     // Call the Tick Action for this state
-    //::::/c/B/0/c/E/k::::Tick::::
+    //::::/c/B/0/c/s/k::::Tick::::
     
     if ( _activeState != 0 && _activeState != this )
       _activeState->tick();
@@ -2193,9 +1751,6 @@ namespace StateMachine {
     case Event::MOTOR_ON:
       handled = true;
       break;
-    case Event::NEXT:
-      handled = true;
-      break;
     case Event::POWER_ASSIST_TOGGLE:
       handled = true;
       break;
@@ -2203,9 +1758,6 @@ namespace StateMachine {
       handled = true;
       break;
     case Event::SCAN_APP:
-      handled = true;
-      break;
-    case Event::SELECT:
       handled = true;
       break;
     case Event::TAP:
@@ -2222,166 +1774,131 @@ namespace StateMachine {
   
     // handle internal transitions first
     switch ( event->type() ) {
-    case Event::BUTTON_RIGHT:
-      if ( false ) {  // makes generation easier :)
-      }
-      else if (true) {
-        #ifdef DEBUG_OUTPUT
-        std::cout << "NO GUARD on INTERNAL TRANSITION:/c/B/0/c/E/k/d" << std::endl;
-        #endif
-        // run transition action
-        //::::/c/B/0/c/E/k/d::::Action::::
-        eventFactory->spawnEvent( StateMachine::Event::CANCEL );
-        // make sure nothing else handles this event
-        handled = true;
-      }
-      break;
     default:
       break;
     }
     if (!handled) {
       // handle external transitions here
       switch ( event->type() ) {
+      case Event::SELECT:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/s/P" << std::endl;
+          #endif
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/s/k
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/s/P
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/s/P" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/s/P::::Action::::
+        
+        // State : entry for: /c/B/0/c/s/b
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Pairing->PushTracker_HFSM::On::Settings::Pair_Phone::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
       case Event::TIMEOUT:
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/E/2r" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/s/W" << std::endl;
           #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/g" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/E/k
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exit();
-          // State : exit for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/E/2r
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/E/2r" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/E/2r::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/g
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/g" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/g::::Action::::
-          
-          // State : entry for: /c/B/0/c/n
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Pairing->PushTracker_HFSM::On::Settings::Units" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/s/k
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/s/W
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/s/W" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/s/W::::Action::::
+        
+        // State : entry for: /c/B/0/c/s/b
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Pairing->PushTracker_HFSM::On::Settings::Pair_Phone::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
         break;
-      case Event::CANCEL:
+      case Event::NEXT:
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/E/Fi" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/s/f" << std::endl;
           #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/g" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/E/k
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exit();
-          // State : exit for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/E/Fi
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/E/Fi" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/E/Fi::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/g
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/g" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/g::::Action::::
-          
-          // State : entry for: /c/B/0/c/n
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Pairing->PushTracker_HFSM::On::Settings::Units" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/s/k
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/s/f
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/s/f" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/s/f::::Action::::
+        
+        // State : entry for: /c/B/0/c/s/b
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Pairing->PushTracker_HFSM::On::Settings::Pair_Phone::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
         break;
       case Event::PAIRED:
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/E/u" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/s/u" << std::endl;
           #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/g" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/E/k
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exit();
-          // State : exit for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/E/u
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/E/u" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/E/u::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/g
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/g" << std::endl;
-          #endif
-          
-          //::::/c/B/0/c/g::::Action::::
-          
-          // State : entry for: /c/B/0/c/n
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Pairing->PushTracker_HFSM::On::Settings::Units" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/s/k
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/s/u
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/s/u" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/s/u::::Action::::
+        
+        // State : entry for: /c/B/0/c/s/b
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Pairing->PushTracker_HFSM::On::Settings::Pair_Phone::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
         break;
       default:
         break;
@@ -2393,7 +1910,7 @@ namespace StateMachine {
     }
     return handled;
   }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_Phone::Icon : /c/B/0/c/E/b  * * */
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_Phone::Icon : /c/B/0/c/s/b  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Pair_Phone::Icon::timerPeriod = 1;
   
@@ -2404,28 +1921,28 @@ namespace StateMachine {
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::Icon::entry ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_Phone::Icon::/c/B/0/c/E/b" << std::endl;
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_Phone::Icon::/c/B/0/c/s/b" << std::endl;
     #endif
     // Entry action for this state
-    //::::/c/B/0/c/E/b::::Entry::::
+    //::::/c/B/0/c/s/b::::Entry::::
     
   }
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::Icon::exit ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_Phone::Icon::/c/B/0/c/E/b" << std::endl;
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_Phone::Icon::/c/B/0/c/s/b" << std::endl;
     #endif
     // Call the Exit Action for this state
-    //::::/c/B/0/c/E/b::::Exit::::
+    //::::/c/B/0/c/s/b::::Exit::::
     
   }
   
   void PushTracker_HFSM::On::Settings::Pair_Phone::Icon::tick ( void ) {
     #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_Phone::Icon::/c/B/0/c/E/b" << std::endl;
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_Phone::Icon::/c/B/0/c/s/b" << std::endl;
     #endif
     // Call the Tick Action for this state
-    //::::/c/B/0/c/E/b::::Tick::::
+    //::::/c/B/0/c/s/b::::Tick::::
     
     if ( _activeState != 0 && _activeState != this )
       _activeState->tick();
@@ -2441,9 +1958,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -2492,21 +2006,21 @@ namespace StateMachine {
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/E/y" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/s/y" << std::endl;
           #endif
           // Transitioning states!
           // Call all from prev state down exits
         PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->exitChildren();
-        // State : exit for: /c/B/0/c/E/b
+        // State : exit for: /c/B/0/c/s/b
         PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->exit();
-        // External Transition : Action for: /c/B/0/c/E/y
+        // External Transition : Action for: /c/B/0/c/s/y
         #ifdef DEBUG_OUTPUT
-        std::cout << "TRANSITION::ACTION for /c/B/0/c/E/y" << std::endl;
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/s/y" << std::endl;
         #endif
         
-        //::::/c/B/0/c/E/y::::Action::::
+        //::::/c/B/0/c/s/y::::Action::::
         
-        // State : entry for: /c/B/0/c/E/k
+        // State : entry for: /c/B/0/c/s/k
         PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__PAIRING_OBJ->entry();
         #ifdef DEBUG_OUTPUT
         std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Icon->PushTracker_HFSM::On::Settings::Pair_Phone::Pairing" << std::endl;
@@ -2518,52 +2032,501 @@ namespace StateMachine {
           handled = true;
           }
         break;
+      default:
+        break;
+      }
+    }
+    if (!handled) {
+      // now check parent states
+      handled = _parentState->handleEvent( event );
+    }
+    return handled;
+  }
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_SmartDrive : /c/B/0/c/o  * * */
+  // Timer period
+  const double PushTracker_HFSM::On::Settings::Pair_SmartDrive::timerPeriod = 0;
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::initialize ( void ) {
+    // External Transition : Action for: /c/B/0/c/o/Y
+    #ifdef DEBUG_OUTPUT
+    std::cout << "TRANSITION::ACTION for /c/B/0/c/o/Y" << std::endl;
+    #endif
+    
+    //::::/c/B/0/c/o/Y::::Action::::
+    
+    // State : entry for: /c/B/0/c/o/K
+    PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->entry();
+    
+    // initialize our new active state
+    PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->initialize();
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::entry ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_SmartDrive::/c/B/0/c/o" << std::endl;
+    #endif
+    // Entry action for this state
+    //::::/c/B/0/c/o::::Entry::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::exit ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_SmartDrive::/c/B/0/c/o" << std::endl;
+    #endif
+    // Call the Exit Action for this state
+    //::::/c/B/0/c/o::::Exit::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::tick ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_SmartDrive::/c/B/0/c/o" << std::endl;
+    #endif
+    // Call the Tick Action for this state
+    //::::/c/B/0/c/o::::Tick::::
+    
+    if ( _activeState != 0 && _activeState != this )
+      _activeState->tick();
+  }
+  
+  double PushTracker_HFSM::On::Settings::Pair_SmartDrive::getTimerPeriod ( void ) {
+    return timerPeriod;
+  }
+  
+  bool PushTracker_HFSM::On::Settings::Pair_SmartDrive::handleEvent ( StateMachine::Event* event ) {
+    bool handled = false;
+  
+    // take care of all event types that this branch will not handle -
+    // for more consistent run-time performnace
+    switch ( event->type() ) {
+    case Event::CONNECTED:
+      handled = true;
+      break;
+    case Event::ENTER_SETTINGS:
+      handled = true;
+      break;
+    case Event::MOTOR_OFF:
+      handled = true;
+      break;
+    case Event::MOTOR_ON:
+      handled = true;
+      break;
+    case Event::PAIRED:
+      handled = true;
+      break;
+    case Event::POWER_ASSIST_TOGGLE:
+      handled = true;
+      break;
+    case Event::POWER_ON:
+      handled = true;
+      break;
+    case Event::SCAN_APP:
+      handled = true;
+      break;
+    case Event::SELECT:
+      handled = true;
+      break;
+    case Event::TAP:
+      handled = true;
+      break;
+    default:
+      break;
+    }
+  
+    if (handled) {
+      // we didn't actually handle the event, but return anyway
+      return false;
+    }
+  
+    // handle internal transitions first
+    switch ( event->type() ) {
+    default:
+      break;
+    }
+    if (!handled) {
+      // handle external transitions here
+      switch ( event->type() ) {
       case Event::NEXT:
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/E/M" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/G" << std::endl;
           #endif
-          // Going into an end pseudo-state that is not the root end state,
-          // follow its parent end transition
-          if (false) { }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/g" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->exitChildren();
-          // State : exit for: /c/B/0/c/E/b
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ__ICON_OBJ->exit();
-          // State : exit for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->exit();
-          // External Transition : Action for: /c/B/0/c/E/M
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/o
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/G
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/G" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/G::::Action::::
+        
+        // State : entry for: /c/B/0/c/n
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive->PushTracker_HFSM::On::Settings::Units" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
+      default:
+        break;
+      }
+    }
+    if (!handled) {
+      // now check parent states
+      handled = _parentState->handleEvent( event );
+    }
+    return handled;
+  }
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing : /c/B/0/c/o/s  * * */
+  // Timer period
+  const double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::timerPeriod = 1;
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::initialize ( void ) {
+    // if we're a leaf state, make sure we're active
+    makeActive();
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::entry ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::/c/B/0/c/o/s" << std::endl;
+    #endif
+    // Entry action for this state
+    //::::/c/B/0/c/o/s::::Entry::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::exit ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::/c/B/0/c/o/s" << std::endl;
+    #endif
+    // Call the Exit Action for this state
+    //::::/c/B/0/c/o/s::::Exit::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::tick ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::/c/B/0/c/o/s" << std::endl;
+    #endif
+    // Call the Tick Action for this state
+    //::::/c/B/0/c/o/s::::Tick::::
+    
+    if ( _activeState != 0 && _activeState != this )
+      _activeState->tick();
+  }
+  
+  double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::getTimerPeriod ( void ) {
+    return timerPeriod;
+  }
+  
+  bool PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing::handleEvent ( StateMachine::Event* event ) {
+    bool handled = false;
+  
+    // take care of all event types that this branch will not handle -
+    // for more consistent run-time performnace
+    switch ( event->type() ) {
+    case Event::CONNECTED:
+      handled = true;
+      break;
+    case Event::ENTER_SETTINGS:
+      handled = true;
+      break;
+    case Event::MOTOR_OFF:
+      handled = true;
+      break;
+    case Event::MOTOR_ON:
+      handled = true;
+      break;
+    case Event::POWER_ASSIST_TOGGLE:
+      handled = true;
+      break;
+    case Event::POWER_ON:
+      handled = true;
+      break;
+    case Event::SCAN_APP:
+      handled = true;
+      break;
+    case Event::TAP:
+      handled = true;
+      break;
+    default:
+      break;
+    }
+  
+    if (handled) {
+      // we didn't actually handle the event, but return anyway
+      return false;
+    }
+  
+    // handle internal transitions first
+    switch ( event->type() ) {
+    default:
+      break;
+    }
+    if (!handled) {
+      // handle external transitions here
+      switch ( event->type() ) {
+      case Event::NEXT:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/E/M" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/o/8" << std::endl;
           #endif
-          
-          //::::/c/B/0/c/E/M::::Action::::
-          
-          // External Transition : Action for: /c/B/0/c/g
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/o/s
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/o/8
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/o/8" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/o/8::::Action::::
+        
+        // State : entry for: /c/B/0/c/o/K
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing->PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
+      case Event::SELECT:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/c/g" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/o/Q" << std::endl;
           #endif
-          
-          //::::/c/B/0/c/g::::Action::::
-          
-          // State : entry for: /c/B/0/c/n
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->entry();
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/o/s
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/o/Q
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/o/Q" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/o/Q::::Action::::
+        
+        // State : entry for: /c/B/0/c/o/K
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing->PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
+      case Event::PAIRED:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_Phone::Icon->PushTracker_HFSM::On::Settings::Units" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/o/O" << std::endl;
           #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__UNITS_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/o/s
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/o/O
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/o/O" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/o/O::::Action::::
+        
+        // State : entry for: /c/B/0/c/o/K
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing->PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
+      case Event::TIMEOUT:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/o/L" << std::endl;
+          #endif
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/o/s
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/o/L
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/o/L" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/o/L::::Action::::
+        
+        // State : entry for: /c/B/0/c/o/K
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing->PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
+      default:
+        break;
+      }
+    }
+    if (!handled) {
+      // now check parent states
+      handled = _parentState->handleEvent( event );
+    }
+    return handled;
+  }
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon : /c/B/0/c/o/K  * * */
+  // Timer period
+  const double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::timerPeriod = 1;
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::initialize ( void ) {
+    // if we're a leaf state, make sure we're active
+    makeActive();
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::entry ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::/c/B/0/c/o/K" << std::endl;
+    #endif
+    // Entry action for this state
+    //::::/c/B/0/c/o/K::::Entry::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::exit ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::/c/B/0/c/o/K" << std::endl;
+    #endif
+    // Call the Exit Action for this state
+    //::::/c/B/0/c/o/K::::Exit::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::tick ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::/c/B/0/c/o/K" << std::endl;
+    #endif
+    // Call the Tick Action for this state
+    //::::/c/B/0/c/o/K::::Tick::::
+    
+    if ( _activeState != 0 && _activeState != this )
+      _activeState->tick();
+  }
+  
+  double PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::getTimerPeriod ( void ) {
+    return timerPeriod;
+  }
+  
+  bool PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon::handleEvent ( StateMachine::Event* event ) {
+    bool handled = false;
+  
+    // take care of all event types that this branch will not handle -
+    // for more consistent run-time performnace
+    switch ( event->type() ) {
+    case Event::CONNECTED:
+      handled = true;
+      break;
+    case Event::ENTER_SETTINGS:
+      handled = true;
+      break;
+    case Event::MOTOR_OFF:
+      handled = true;
+      break;
+    case Event::MOTOR_ON:
+      handled = true;
+      break;
+    case Event::PAIRED:
+      handled = true;
+      break;
+    case Event::POWER_ASSIST_TOGGLE:
+      handled = true;
+      break;
+    case Event::POWER_ON:
+      handled = true;
+      break;
+    case Event::SCAN_APP:
+      handled = true;
+      break;
+    case Event::TAP:
+      handled = true;
+      break;
+    default:
+      break;
+    }
+  
+    if (handled) {
+      // we didn't actually handle the event, but return anyway
+      return false;
+    }
+  
+    // handle internal transitions first
+    switch ( event->type() ) {
+    default:
+      break;
+    }
+    if (!handled) {
+      // handle external transitions here
+      switch ( event->type() ) {
+      case Event::SELECT:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/o/o" << std::endl;
+          #endif
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/o/K
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__ICON_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/o/o
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/o/o" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/o/o::::Action::::
+        
+        // State : entry for: /c/B/0/c/o/s
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Pair_SmartDrive::Icon->PushTracker_HFSM::On::Settings::Pair_SmartDrive::Pairing" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ__PAIRING_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
         break;
       default:
         break;
@@ -2623,9 +2586,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -2774,9 +2734,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -2922,9 +2879,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -3060,9 +3014,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -3195,9 +3146,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -3330,9 +3278,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -3475,9 +3420,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -3613,9 +3555,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -3748,9 +3687,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -3893,9 +3829,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -4031,9 +3964,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -4166,9 +4096,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -4311,9 +4238,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -4449,9 +4373,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -4584,9 +4505,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -4719,9 +4637,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -4854,9 +4769,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -5029,9 +4941,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -5083,28 +4992,28 @@ namespace StateMachine {
         if ( false ) { }  // makes generation easier :)
         else if ( true ) {
           #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/w" << std::endl;
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/I" << std::endl;
           #endif
           // Transitioning states!
           // Call all from prev state down exits
         PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ->exitChildren();
         // State : exit for: /c/B/0/c/m
         PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ->exit();
-        // External Transition : Action for: /c/B/0/c/w
+        // External Transition : Action for: /c/B/0/c/I
         #ifdef DEBUG_OUTPUT
-        std::cout << "TRANSITION::ACTION for /c/B/0/c/w" << std::endl;
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/I" << std::endl;
         #endif
         
-        //::::/c/B/0/c/w::::Action::::
+        //::::/c/B/0/c/I::::Action::::
         
-        // State : entry for: /c/B/0/c/3
-        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->entry();
+        // State : entry for: /c/B/0/c/s
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
         #ifdef DEBUG_OUTPUT
-        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Time->PushTracker_HFSM::On::Settings::Pair_SmartDrive" << std::endl;
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Time->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
         #endif
         
           // going into regular state
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->initialize();
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
           // make sure nothing else handles this event
           handled = true;
           }
@@ -5177,9 +5086,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -5218,6 +5124,20 @@ namespace StateMachine {
   
     // handle internal transitions first
     switch ( event->type() ) {
+    case Event::BUTTON_RIGHT:
+      if ( false ) {  // makes generation easier :)
+      }
+      else if (true) {
+        #ifdef DEBUG_OUTPUT
+        std::cout << "NO GUARD on INTERNAL TRANSITION:/c/B/0/c/m/R/Eh" << std::endl;
+        #endif
+        // run transition action
+        //::::/c/B/0/c/m/R/Eh::::Action::::
+        
+        // make sure nothing else handles this event
+        handled = true;
+      }
+      break;
     default:
       break;
     }
@@ -5312,9 +5232,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -5399,141 +5316,6 @@ namespace StateMachine {
     }
     return handled;
   }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes : /c/B/0/c/m/R/I  * * */
-  // Timer period
-  const double PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::timerPeriod = 1;
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::initialize ( void ) {
-    // if we're a leaf state, make sure we're active
-    makeActive();
-  }
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::entry ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::/c/B/0/c/m/R/I" << std::endl;
-    #endif
-    // Entry action for this state
-    //::::/c/B/0/c/m/R/I::::Entry::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::exit ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::/c/B/0/c/m/R/I" << std::endl;
-    #endif
-    // Call the Exit Action for this state
-    //::::/c/B/0/c/m/R/I::::Exit::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::tick ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::/c/B/0/c/m/R/I" << std::endl;
-    #endif
-    // Call the Tick Action for this state
-    //::::/c/B/0/c/m/R/I::::Tick::::
-    
-    if ( _activeState != 0 && _activeState != this )
-      _activeState->tick();
-  }
-  
-  double PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::getTimerPeriod ( void ) {
-    return timerPeriod;
-  }
-  
-  bool PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::handleEvent ( StateMachine::Event* event ) {
-    bool handled = false;
-  
-    // take care of all event types that this branch will not handle -
-    // for more consistent run-time performnace
-    switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
-    case Event::CONNECTED:
-      handled = true;
-      break;
-    case Event::ENTER_SETTINGS:
-      handled = true;
-      break;
-    case Event::MOTOR_OFF:
-      handled = true;
-      break;
-    case Event::MOTOR_ON:
-      handled = true;
-      break;
-    case Event::PAIRED:
-      handled = true;
-      break;
-    case Event::POWER_ASSIST_TOGGLE:
-      handled = true;
-      break;
-    case Event::POWER_ON:
-      handled = true;
-      break;
-    case Event::SCAN_APP:
-      handled = true;
-      break;
-    case Event::TAP:
-      handled = true;
-      break;
-    default:
-      break;
-    }
-  
-    if (handled) {
-      // we didn't actually handle the event, but return anyway
-      return false;
-    }
-  
-    // handle internal transitions first
-    switch ( event->type() ) {
-    default:
-      break;
-    }
-    if (!handled) {
-      // handle external transitions here
-      switch ( event->type() ) {
-      case Event::SELECT:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/m/R/Y" << std::endl;
-          #endif
-          // Transitioning states!
-          // Call all from prev state down exits
-        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ->exitChildren();
-        // State : exit for: /c/B/0/c/m/R/I
-        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ->exit();
-        // External Transition : Action for: /c/B/0/c/m/R/Y
-        #ifdef DEBUG_OUTPUT
-        std::cout << "TRANSITION::ACTION for /c/B/0/c/m/R/Y" << std::endl;
-        #endif
-        
-        //::::/c/B/0/c/m/R/Y::::Action::::
-        
-        // State : entry for: /c/B/0/c/m/R/1
-        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ->entry();
-        #ifdef DEBUG_OUTPUT
-        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes->PushTracker_HFSM::On::Settings::Time::Set_Time::Minutes" << std::endl;
-        #endif
-        
-          // going into regular state
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ->initialize();
-          // make sure nothing else handles this event
-          handled = true;
-          }
-        break;
-      default:
-        break;
-      }
-    }
-    if (!handled) {
-      // now check parent states
-      handled = _parentState->handleEvent( event );
-    }
-    return handled;
-  }
   /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Set_Time::Format : /c/B/0/c/m/R/q  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Time::Set_Time::Format::timerPeriod = 1;
@@ -5582,9 +5364,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -5687,9 +5466,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -5774,6 +5550,138 @@ namespace StateMachine {
     }
     return handled;
   }
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes : /c/B/0/c/m/R/I  * * */
+  // Timer period
+  const double PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::timerPeriod = 1;
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::initialize ( void ) {
+    // if we're a leaf state, make sure we're active
+    makeActive();
+  }
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::entry ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::/c/B/0/c/m/R/I" << std::endl;
+    #endif
+    // Entry action for this state
+    //::::/c/B/0/c/m/R/I::::Entry::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::exit ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::/c/B/0/c/m/R/I" << std::endl;
+    #endif
+    // Call the Exit Action for this state
+    //::::/c/B/0/c/m/R/I::::Exit::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::tick ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::/c/B/0/c/m/R/I" << std::endl;
+    #endif
+    // Call the Tick Action for this state
+    //::::/c/B/0/c/m/R/I::::Tick::::
+    
+    if ( _activeState != 0 && _activeState != this )
+      _activeState->tick();
+  }
+  
+  double PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::getTimerPeriod ( void ) {
+    return timerPeriod;
+  }
+  
+  bool PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes::handleEvent ( StateMachine::Event* event ) {
+    bool handled = false;
+  
+    // take care of all event types that this branch will not handle -
+    // for more consistent run-time performnace
+    switch ( event->type() ) {
+    case Event::CONNECTED:
+      handled = true;
+      break;
+    case Event::ENTER_SETTINGS:
+      handled = true;
+      break;
+    case Event::MOTOR_OFF:
+      handled = true;
+      break;
+    case Event::MOTOR_ON:
+      handled = true;
+      break;
+    case Event::PAIRED:
+      handled = true;
+      break;
+    case Event::POWER_ASSIST_TOGGLE:
+      handled = true;
+      break;
+    case Event::POWER_ON:
+      handled = true;
+      break;
+    case Event::SCAN_APP:
+      handled = true;
+      break;
+    case Event::TAP:
+      handled = true;
+      break;
+    default:
+      break;
+    }
+  
+    if (handled) {
+      // we didn't actually handle the event, but return anyway
+      return false;
+    }
+  
+    // handle internal transitions first
+    switch ( event->type() ) {
+    default:
+      break;
+    }
+    if (!handled) {
+      // handle external transitions here
+      switch ( event->type() ) {
+      case Event::SELECT:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/c/m/R/Y" << std::endl;
+          #endif
+          // Transitioning states!
+          // Call all from prev state down exits
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ->exitChildren();
+        // State : exit for: /c/B/0/c/m/R/I
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__TEN_MINUTES_OBJ->exit();
+        // External Transition : Action for: /c/B/0/c/m/R/Y
+        #ifdef DEBUG_OUTPUT
+        std::cout << "TRANSITION::ACTION for /c/B/0/c/m/R/Y" << std::endl;
+        #endif
+        
+        //::::/c/B/0/c/m/R/Y::::Action::::
+        
+        // State : entry for: /c/B/0/c/m/R/1
+        PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ->entry();
+        #ifdef DEBUG_OUTPUT
+        std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Settings::Time::Set_Time::Ten_Minutes->PushTracker_HFSM::On::Settings::Time::Set_Time::Minutes" << std::endl;
+        #endif
+        
+          // going into regular state
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__TIME_OBJ__SET_TIME_OBJ__MINUTES_OBJ->initialize();
+          // make sure nothing else handles this event
+          handled = true;
+          }
+        break;
+      default:
+        break;
+      }
+    }
+    if (!handled) {
+      // now check parent states
+      handled = _parentState->handleEvent( event );
+    }
+    return handled;
+  }
   /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Set_Date : /c/B/0/c/m/z  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Time::Set_Date::timerPeriod = 0;
@@ -5832,9 +5740,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -5873,6 +5778,20 @@ namespace StateMachine {
   
     // handle internal transitions first
     switch ( event->type() ) {
+    case Event::BUTTON_RIGHT:
+      if ( false ) {  // makes generation easier :)
+      }
+      else if (true) {
+        #ifdef DEBUG_OUTPUT
+        std::cout << "NO GUARD on INTERNAL TRANSITION:/c/B/0/c/m/z/A" << std::endl;
+        #endif
+        // run transition action
+        //::::/c/B/0/c/m/z/A::::Action::::
+        
+        // make sure nothing else handles this event
+        handled = true;
+      }
+      break;
     default:
       break;
     }
@@ -5967,9 +5886,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -6054,111 +5970,6 @@ namespace StateMachine {
     }
     return handled;
   }
-  /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Set_Date::Years : /c/B/0/c/m/z/X  * * */
-  // Timer period
-  const double PushTracker_HFSM::On::Settings::Time::Set_Date::Years::timerPeriod = 1;
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::initialize ( void ) {
-    // if we're a leaf state, make sure we're active
-    makeActive();
-  }
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::entry ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Time::Set_Date::Years::/c/B/0/c/m/z/X" << std::endl;
-    #endif
-    // Entry action for this state
-    //::::/c/B/0/c/m/z/X::::Entry::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::exit ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Time::Set_Date::Years::/c/B/0/c/m/z/X" << std::endl;
-    #endif
-    // Call the Exit Action for this state
-    //::::/c/B/0/c/m/z/X::::Exit::::
-    
-  }
-  
-  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::tick ( void ) {
-    #ifdef DEBUG_OUTPUT
-    std::cout << "TICK::PushTracker_HFSM::On::Settings::Time::Set_Date::Years::/c/B/0/c/m/z/X" << std::endl;
-    #endif
-    // Call the Tick Action for this state
-    //::::/c/B/0/c/m/z/X::::Tick::::
-    
-    if ( _activeState != 0 && _activeState != this )
-      _activeState->tick();
-  }
-  
-  double PushTracker_HFSM::On::Settings::Time::Set_Date::Years::getTimerPeriod ( void ) {
-    return timerPeriod;
-  }
-  
-  bool PushTracker_HFSM::On::Settings::Time::Set_Date::Years::handleEvent ( StateMachine::Event* event ) {
-    bool handled = false;
-  
-    // take care of all event types that this branch will not handle -
-    // for more consistent run-time performnace
-    switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
-    case Event::CONNECTED:
-      handled = true;
-      break;
-    case Event::ENTER_SETTINGS:
-      handled = true;
-      break;
-    case Event::MOTOR_OFF:
-      handled = true;
-      break;
-    case Event::MOTOR_ON:
-      handled = true;
-      break;
-    case Event::PAIRED:
-      handled = true;
-      break;
-    case Event::POWER_ASSIST_TOGGLE:
-      handled = true;
-      break;
-    case Event::POWER_ON:
-      handled = true;
-      break;
-    case Event::SCAN_APP:
-      handled = true;
-      break;
-    case Event::TAP:
-      handled = true;
-      break;
-    default:
-      break;
-    }
-  
-    if (handled) {
-      // we didn't actually handle the event, but return anyway
-      return false;
-    }
-  
-    // handle internal transitions first
-    switch ( event->type() ) {
-    default:
-      break;
-    }
-    if (!handled) {
-      // handle external transitions here
-      switch ( event->type() ) {
-      default:
-        break;
-      }
-    }
-    if (!handled) {
-      // now check parent states
-      handled = _parentState->handleEvent( event );
-    }
-    return handled;
-  }
   /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Set_Date::Day : /c/B/0/c/m/z/G  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Time::Set_Date::Day::timerPeriod = 1;
@@ -6207,9 +6018,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -6342,9 +6150,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -6429,6 +6234,108 @@ namespace StateMachine {
     }
     return handled;
   }
+  /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Set_Date::Years : /c/B/0/c/m/z/X  * * */
+  // Timer period
+  const double PushTracker_HFSM::On::Settings::Time::Set_Date::Years::timerPeriod = 1;
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::initialize ( void ) {
+    // if we're a leaf state, make sure we're active
+    makeActive();
+  }
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::entry ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "ENTRY::PushTracker_HFSM::On::Settings::Time::Set_Date::Years::/c/B/0/c/m/z/X" << std::endl;
+    #endif
+    // Entry action for this state
+    //::::/c/B/0/c/m/z/X::::Entry::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::exit ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "EXIT::PushTracker_HFSM::On::Settings::Time::Set_Date::Years::/c/B/0/c/m/z/X" << std::endl;
+    #endif
+    // Call the Exit Action for this state
+    //::::/c/B/0/c/m/z/X::::Exit::::
+    
+  }
+  
+  void PushTracker_HFSM::On::Settings::Time::Set_Date::Years::tick ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "TICK::PushTracker_HFSM::On::Settings::Time::Set_Date::Years::/c/B/0/c/m/z/X" << std::endl;
+    #endif
+    // Call the Tick Action for this state
+    //::::/c/B/0/c/m/z/X::::Tick::::
+    
+    if ( _activeState != 0 && _activeState != this )
+      _activeState->tick();
+  }
+  
+  double PushTracker_HFSM::On::Settings::Time::Set_Date::Years::getTimerPeriod ( void ) {
+    return timerPeriod;
+  }
+  
+  bool PushTracker_HFSM::On::Settings::Time::Set_Date::Years::handleEvent ( StateMachine::Event* event ) {
+    bool handled = false;
+  
+    // take care of all event types that this branch will not handle -
+    // for more consistent run-time performnace
+    switch ( event->type() ) {
+    case Event::CONNECTED:
+      handled = true;
+      break;
+    case Event::ENTER_SETTINGS:
+      handled = true;
+      break;
+    case Event::MOTOR_OFF:
+      handled = true;
+      break;
+    case Event::MOTOR_ON:
+      handled = true;
+      break;
+    case Event::PAIRED:
+      handled = true;
+      break;
+    case Event::POWER_ASSIST_TOGGLE:
+      handled = true;
+      break;
+    case Event::POWER_ON:
+      handled = true;
+      break;
+    case Event::SCAN_APP:
+      handled = true;
+      break;
+    case Event::TAP:
+      handled = true;
+      break;
+    default:
+      break;
+    }
+  
+    if (handled) {
+      // we didn't actually handle the event, but return anyway
+      return false;
+    }
+  
+    // handle internal transitions first
+    switch ( event->type() ) {
+    default:
+      break;
+    }
+    if (!handled) {
+      // handle external transitions here
+      switch ( event->type() ) {
+      default:
+        break;
+      }
+    }
+    if (!handled) {
+      // now check parent states
+      handled = _parentState->handleEvent( event );
+    }
+    return handled;
+  }
   /* * *  Definitions for PushTracker_HFSM::On::Settings::Time::Icon : /c/B/0/c/m/s  * * */
   // Timer period
   const double PushTracker_HFSM::On::Settings::Time::Icon::timerPeriod = 1;
@@ -6477,9 +6384,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -6622,9 +6526,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -6760,9 +6661,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -6895,9 +6793,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -7060,9 +6955,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -7325,9 +7217,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -7500,9 +7389,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -7638,9 +7524,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -7773,9 +7656,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -7958,9 +7838,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -8045,7 +7922,7 @@ namespace StateMachine {
             }
           else if ( true ) {
             #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/L" << std::endl;
+            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/r" << std::endl;
             #endif
             // Transitioning states!
             // Call all from prev state down exits
@@ -8059,16 +7936,16 @@ namespace StateMachine {
           
           //::::/c/B/0/0::::Action::::
           
-          // External Transition : Action for: /c/B/0/L
+          // External Transition : Action for: /c/B/0/r
           #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/L" << std::endl;
+          std::cout << "TRANSITION::ACTION for /c/B/0/r" << std::endl;
           #endif
           
-          //::::/c/B/0/L::::Action::::
+          //::::/c/B/0/r::::Action::::
           
           // State : entry for: /c/B/0/c
           PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ->entry();
-          // State : entry for: /c/B/0/c/3
+          // State : entry for: /c/B/0/c/o
           PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_SMARTDRIVE_OBJ->entry();
           #ifdef DEBUG_OUTPUT
           std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Display_Info->PushTracker_HFSM::On::Settings::Pair_SmartDrive" << std::endl;
@@ -8110,88 +7987,6 @@ namespace StateMachine {
           // make sure nothing else handles this event
           handled = true;
           }
-        break;
-      case Event::SCAN_APP:
-        if ( false ) { }  // makes generation easier :)
-        else if ( true ) {
-          #ifdef DEBUG_OUTPUT
-          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/wc" << std::endl;
-          #endif
-          // Going into a choice pseudo-state, let it handle its
-          // guards and perform the state transition
-          if (false) { } // makes geneeration easier :)
-          //::::/c/B/0/D::::Guard::::
-          else if ( PhonePaired ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "GUARD [ PhonePaired ] for EXTERNAL TRANSITION:/c/B/0/D evaluated to TRUE" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exitChildren();
-          // State : exit for: /c/B/0/s
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exit();
-          // External Transition : Action for: /c/B/0/wc
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/wc" << std::endl;
-          #endif
-          
-          //::::/c/B/0/wc::::Action::::
-          
-          // External Transition : Action for: /c/B/0/D
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/D" << std::endl;
-          #endif
-          
-          //::::/c/B/0/D::::Action::::
-          
-          // State : entry for: /c/B/0/t
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Display_Info->PushTracker_HFSM::On::Scan_for_App" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-          else if ( true ) {
-            #ifdef DEBUG_OUTPUT
-            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/o" << std::endl;
-            #endif
-            // Transitioning states!
-            // Call all from prev state down exits
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exitChildren();
-          // State : exit for: /c/B/0/s
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exit();
-          // External Transition : Action for: /c/B/0/wc
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/wc" << std::endl;
-          #endif
-          
-          //::::/c/B/0/wc::::Action::::
-          
-          // External Transition : Action for: /c/B/0/o
-          #ifdef DEBUG_OUTPUT
-          std::cout << "TRANSITION::ACTION for /c/B/0/o" << std::endl;
-          #endif
-          
-          //::::/c/B/0/o::::Action::::
-          
-          // State : entry for: /c/B/0/c
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ->entry();
-          // State : entry for: /c/B/0/c/E
-          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
-          #ifdef DEBUG_OUTPUT
-          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Display_Info->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
-          #endif
-          
-            // going into regular state
-            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
-            // make sure nothing else handles this event
-            handled = true;
-            }
-        }
         break;
       case Event::TIMEOUT:
         if ( false ) { }  // makes generation easier :)
@@ -8252,6 +8047,88 @@ namespace StateMachine {
           // make sure nothing else handles this event
           handled = true;
           }
+        break;
+      case Event::SCAN_APP:
+        if ( false ) { }  // makes generation easier :)
+        else if ( true ) {
+          #ifdef DEBUG_OUTPUT
+          std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/wc" << std::endl;
+          #endif
+          // Going into a choice pseudo-state, let it handle its
+          // guards and perform the state transition
+          if (false) { } // makes geneeration easier :)
+          //::::/c/B/0/D::::Guard::::
+          else if ( PhonePaired ) {
+            #ifdef DEBUG_OUTPUT
+            std::cout << "GUARD [ PhonePaired ] for EXTERNAL TRANSITION:/c/B/0/D evaluated to TRUE" << std::endl;
+            #endif
+            // Transitioning states!
+            // Call all from prev state down exits
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exitChildren();
+          // State : exit for: /c/B/0/s
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exit();
+          // External Transition : Action for: /c/B/0/wc
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/wc" << std::endl;
+          #endif
+          
+          //::::/c/B/0/wc::::Action::::
+          
+          // External Transition : Action for: /c/B/0/D
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/D" << std::endl;
+          #endif
+          
+          //::::/c/B/0/D::::Action::::
+          
+          // State : entry for: /c/B/0/t
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->entry();
+          #ifdef DEBUG_OUTPUT
+          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Display_Info->PushTracker_HFSM::On::Scan_for_App" << std::endl;
+          #endif
+          
+            // going into regular state
+            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SCAN_FOR_APP_OBJ->initialize();
+            // make sure nothing else handles this event
+            handled = true;
+            }
+          else if ( true ) {
+            #ifdef DEBUG_OUTPUT
+            std::cout << "NO GUARD on EXTERNAL TRANSITION:/c/B/0/f" << std::endl;
+            #endif
+            // Transitioning states!
+            // Call all from prev state down exits
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exitChildren();
+          // State : exit for: /c/B/0/s
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__DISPLAY_INFO_OBJ->exit();
+          // External Transition : Action for: /c/B/0/wc
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/wc" << std::endl;
+          #endif
+          
+          //::::/c/B/0/wc::::Action::::
+          
+          // External Transition : Action for: /c/B/0/f
+          #ifdef DEBUG_OUTPUT
+          std::cout << "TRANSITION::ACTION for /c/B/0/f" << std::endl;
+          #endif
+          
+          //::::/c/B/0/f::::Action::::
+          
+          // State : entry for: /c/B/0/c
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ->entry();
+          // State : entry for: /c/B/0/c/s
+          PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->entry();
+          #ifdef DEBUG_OUTPUT
+          std::cout << "STATE TRANSITION: PushTracker_HFSM::On::Display_Info->PushTracker_HFSM::On::Settings::Pair_Phone" << std::endl;
+          #endif
+          
+            // going into regular state
+            PUSHTRACKER_HFSM_OBJ__ON_OBJ__SETTINGS_OBJ__PAIR_PHONE_OBJ->initialize();
+            // make sure nothing else handles this event
+            handled = true;
+            }
+        }
         break;
       default:
         break;
@@ -8321,9 +8198,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -8447,9 +8321,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -8543,9 +8414,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -8699,9 +8567,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -8825,9 +8690,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -8951,9 +8813,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -9117,9 +8976,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -9243,9 +9099,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -9339,9 +9192,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -9505,9 +9355,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -9631,9 +9478,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -9727,9 +9571,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -9883,9 +9724,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -10012,9 +9850,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::MOTOR_OFF:
       handled = true;
       break;
@@ -10207,9 +10042,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -10300,9 +10132,135 @@ namespace StateMachine {
     }
     return handled;
   }
+  /* * *  Definitions for PushTracker_HFSM::OTA : /c/B/F  * * */
+  // Timer period
+  const double PushTracker_HFSM::OTA::timerPeriod = 1;
+  
+  void PushTracker_HFSM::OTA::initialize ( void ) {
+    // if we're a leaf state, make sure we're active
+    makeActive();
+  }
+  
+  void PushTracker_HFSM::OTA::entry ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "ENTRY::PushTracker_HFSM::OTA::/c/B/F" << std::endl;
+    #endif
+    // Entry action for this state
+    //::::/c/B/F::::Entry::::
+    
+  }
+  
+  void PushTracker_HFSM::OTA::exit ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "EXIT::PushTracker_HFSM::OTA::/c/B/F" << std::endl;
+    #endif
+    // Call the Exit Action for this state
+    //::::/c/B/F::::Exit::::
+    
+  }
+  
+  void PushTracker_HFSM::OTA::tick ( void ) {
+    #ifdef DEBUG_OUTPUT
+    std::cout << "TICK::PushTracker_HFSM::OTA::/c/B/F" << std::endl;
+    #endif
+    // Call the Tick Action for this state
+    //::::/c/B/F::::Tick::::
+    
+    if ( _activeState != 0 && _activeState != this )
+      _activeState->tick();
+  }
+  
+  double PushTracker_HFSM::OTA::getTimerPeriod ( void ) {
+    return timerPeriod;
+  }
+  
+  bool PushTracker_HFSM::OTA::handleEvent ( StateMachine::Event* event ) {
+    bool handled = false;
+  
+    // take care of all event types that this branch will not handle -
+    // for more consistent run-time performnace
+    switch ( event->type() ) {
+    case Event::BUTTON_LEFT:
+      handled = true;
+      break;
+    case Event::BUTTON_LEFT_HOLD:
+      handled = true;
+      break;
+    case Event::BUTTON_RIGHT:
+      handled = true;
+      break;
+    case Event::BUTTON_RIGHT_HOLD:
+      handled = true;
+      break;
+    case Event::CONNECTED:
+      handled = true;
+      break;
+    case Event::ENTER_SETTINGS:
+      handled = true;
+      break;
+    case Event::MOTOR_OFF:
+      handled = true;
+      break;
+    case Event::MOTOR_ON:
+      handled = true;
+      break;
+    case Event::NEXT:
+      handled = true;
+      break;
+    case Event::PAIRED:
+      handled = true;
+      break;
+    case Event::POWER_ASSIST_TOGGLE:
+      handled = true;
+      break;
+    case Event::POWER_OFF:
+      handled = true;
+      break;
+    case Event::POWER_ON:
+      handled = true;
+      break;
+    case Event::SCAN_APP:
+      handled = true;
+      break;
+    case Event::SELECT:
+      handled = true;
+      break;
+    case Event::START_OTA:
+      handled = true;
+      break;
+    case Event::TAP:
+      handled = true;
+      break;
+    case Event::TIMEOUT:
+      handled = true;
+      break;
+    default:
+      break;
+    }
+  
+    if (handled) {
+      // we didn't actually handle the event, but return anyway
+      return false;
+    }
+  
+    // handle internal transitions first
+    switch ( event->type() ) {
+    default:
+      break;
+    }
+    if (!handled) {
+      // handle external transitions here
+      switch ( event->type() ) {
+      default:
+        break;
+      }
+    }
+    // can't buble up, we are a root state.
+    return handled;
+  }
   /* * *  Definitions for PushTracker_HFSM::Sleep : /c/B/P  * * */
   // Timer period
-  const double PushTracker_HFSM::Sleep::timerPeriod = 1;
+  const double PushTracker_HFSM::Sleep::timerPeriod = 0.5;
   
   void PushTracker_HFSM::Sleep::initialize ( void ) {
     // if we're a leaf state, make sure we're active
@@ -10316,6 +10274,29 @@ namespace StateMachine {
     // Entry action for this state
     //::::/c/B/P::::Entry::::
     
+  //sysInitDone = 0;
+  btn_left_hold=0;
+  btn_left_pressed = 0;
+  btn_right_pressed = 0;
+  
+  ble_radio_state = Radio_off;
+  AppState = App_off;
+  SD_status=SD_off;
+  scanning_stop();
+  AppConnectionStatus=AppRadioOff;
+  DuConnectionStatus=DuRadioOff;
+  disconnect_device();
+  
+  set_led_event();
+  //set_led_all(led_off);
+  state_time = 0;
+  clear_dram();
+  display_sleep(oled_wakeup);
+  display_sleepIcon(0);
+  dram_ptr=0;
+  scrolling=scroll_hor;
+  set_led_all(led_off);
+  display_write();
   }
   
   void PushTracker_HFSM::Sleep::exit ( void ) {
@@ -10333,7 +10314,28 @@ namespace StateMachine {
     #endif
     // Call the Tick Action for this state
     //::::/c/B/P::::Tick::::
-    
+          state_time+=TICKS_TO_MS((uint32)(0.5 * 1000.0));
+        if((state_time>1500)&&(state_time<2500))//  1.5s
+        {
+  
+          display_sleep(oled_sleep);    
+  
+        }
+        else
+        {
+  
+        }
+        if((state_time>2500)&&(state_time<3500))//  1.5s
+        {
+          systemSleeping=1;
+  
+          enable_acc(acc_off);
+          enable_i2c(i2c_off);
+        }
+        rtc_time+=TICKS_TO_MS((uint32)(0.5 * 1000.0));
+        set_led_all(led_off);
+        check_rtc();
+        watchdog_kick();
     if ( _activeState != 0 && _activeState != this )
       _activeState->tick();
   }
@@ -10348,9 +10350,6 @@ namespace StateMachine {
     // take care of all event types that this branch will not handle -
     // for more consistent run-time performnace
     switch ( event->type() ) {
-    case Event::CANCEL:
-      handled = true;
-      break;
     case Event::CONNECTED:
       handled = true;
       break;
@@ -10379,6 +10378,9 @@ namespace StateMachine {
       handled = true;
       break;
     case Event::SELECT:
+      handled = true;
+      break;
+    case Event::START_OTA:
       handled = true;
       break;
     case Event::TAP:

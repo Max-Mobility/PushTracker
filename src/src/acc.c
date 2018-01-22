@@ -1,5 +1,4 @@
 #include "acc.h"
-#include "acc.h"
 #include "i2c.h"
 #include "globals.h"
 

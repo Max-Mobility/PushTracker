@@ -1,7 +1,4 @@
 #include "i2c.h"
-#include "i2c.h"
-#include "i2c.h"
-#include "i2c.h"
 
 #include <blestack/hw.h>
 #include "ioCC2541_bitdef.h"   
@@ -349,7 +346,7 @@ i2cLen_t HalI2CWrite(i2cLen_t len, uint8 *pBuf, uint8 stop)
 //  return len;
 //}
 
-void init_i2c()
+void init_i2c(void)
 {
   HalI2CInit(i2cClock_123KHZ);
 }

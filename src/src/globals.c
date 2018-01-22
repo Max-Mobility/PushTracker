@@ -1,5 +1,4 @@
 #include "globals.h"
-#include "globals.h"
 #include "acc.h"
 #include "motor.h"
 #include "ble.h"
@@ -9,7 +8,6 @@
 #include "rtc.h"
 #include <blestack/gatt.h>
 #include <string.h>
-#include <blestack/config.h>
 
 const uint8 __code codeSpaceData[10240];
 

@@ -1,5 +1,4 @@
 #include "leds.h"
-#include "leds.h"
 #include <blestack/hw.h>
 
 
@@ -84,7 +83,7 @@ void set_RGB_off()
  
 }
 
-void init_leds()
+void init_leds(void)
 {
   led_red_count =0;
   led_green_count =0;

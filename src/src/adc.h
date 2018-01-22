@@ -1,7 +1,5 @@
 #ifndef ADC_INCLUDE_GUARD_
 #define ADC_INCLUDE_GUARD_
-#ifndef ADC_H
-#define ADC_H
 
 #include <blestack/hw.h>
 
@@ -15,28 +13,8 @@ void init_adc(void);
 
 void start_adc(uint8 input, uint8 decimation ,uint8 voltRef);
 
-
-
 #pragma vector=ADC_VECTOR
 __interrupt void adc_isr (void);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
 #endif //ADC_INCLUDE_GUARD_

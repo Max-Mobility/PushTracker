@@ -1,5 +1,4 @@
 #include "adc.h"
-#include "adc.h"
 #include "globals.h"
 #include "ioCC2541_bitdef.h"
 #include "pstore.h"

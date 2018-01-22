@@ -1,7 +1,5 @@
 #ifndef BLE_INCLUDE_GUARD_
 #define BLE_INCLUDE_GUARD_
-#ifndef BLE_H
-#define BLE_H
 
 #include <blestack/blestack.h>
 #include <blestack/gap.h>
@@ -10,10 +8,7 @@
 #include <blestack/ps.h>
 #include "pstore.h"
 
-
-
 #define MAX_CONNECTIONS 2
-
 
 #define STATE_STANDBY   0
 #define STATE_SCANNING   1
@@ -195,12 +190,5 @@ void disconnect_App(void);
 
 void subscribe(uint8 connection, uint8 handle, uint8 error);
 void setLookingForService_state(uint8 state);
-
-
-
-
-
-#endif
-
 
 #endif //BLE_INCLUDE_GUARD_

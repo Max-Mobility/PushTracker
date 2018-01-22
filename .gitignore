@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+bgbuild/
+debug/
+*.hex
+*.ota
+*.dep
+settings/
+src/attributes.txt
+*.bin

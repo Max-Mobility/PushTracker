@@ -1,8 +1,6 @@
 #ifndef IOINT_INCLUDE_GUARD_
 #define IOINT_INCLUDE_GUARD_
 
-#ifndef IOINT_H
-#define IOINT_H
 #include "ioCC2541_bitdef.h"
 #include <blestack/hw.h>
 
@@ -20,9 +18,5 @@ __interrupt void p0_ISR(void);
 
 #pragma vector = P1INT_VECTOR
 __interrupt void p1_ISR(void);
-
-
-
-#endif
 
 #endif //IOINT_INCLUDE_GUARD_
