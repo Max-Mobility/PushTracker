@@ -266,6 +266,7 @@ journeyState = Journey_State_Stopped;
 loadSettings();
 ps_load_version();
 rtc_time = 0;
+state_time=0;
 /*
     dfu_pointer = FIRST_USER_PAGE_ADDRESS;
     */
@@ -344,7 +345,7 @@ WDCTL = 0x08;// start watchdog
   enable_acc(acc_on);
   enable_i2c(i2c_on);
   init_acc();
-  display_sleep(oled_sleep);
+  //display_sleep(oled_sleep);
   }
   
   void PushTracker_HFSM::On::exit ( void ) {
@@ -716,7 +717,7 @@ WDCTL = 0x08;// start watchdog
     #endif
     // Call the Tick Action for this state
     //::::/c/B/0/B::::Tick::::
-            state_time+=TICKS_TO_MS((uint32)(1.0 * 1000.0));
+            state_time+=(uint32)(1.0 * 1000.0);
           if(state_time>1500)//  1.5s
           {
             eventFactory->spawnEvent( StateMachine::Event::TIMEOUT );
@@ -10314,7 +10315,7 @@ WDCTL = 0x08;// start watchdog
     #endif
     // Call the Tick Action for this state
     //::::/c/B/P::::Tick::::
-          state_time+=TICKS_TO_MS((uint32)(0.5 * 1000.0));
+          state_time+=(uint32)(0.5 * 1000.0);
         if((state_time>1500)&&(state_time<2500))//  1.5s
         {
   
@@ -10331,6 +10332,9 @@ WDCTL = 0x08;// start watchdog
   
           enable_acc(acc_off);
           enable_i2c(i2c_off);
+        }
+        if (btn_left_hold || btn_left_pressed || btn_right_pressed || btn_right_hold) {
+          eventFactory->spawnEvent( StateMachine::Event::BUTTON_LEFT );
         }
         rtc_time+=TICKS_TO_MS((uint32)(0.5 * 1000.0));
         set_led_all(led_off);
